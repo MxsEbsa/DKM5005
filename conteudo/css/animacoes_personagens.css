@@ -1,0 +1,752 @@
+.anima_tempo_6s{
+	-webkit-animation-duration: 6s;
+	animation-duration: 6s;
+}
+.anima_tempo_7s{
+	-webkit-animation-duration: 7s;
+	animation-duration: 7s;
+}
+.anima_tempo_8s{
+	-webkit-animation-duration: 8s;
+	animation-duration: 8s;
+}
+/* Piscada para personagens */
+.animacao_personagens_olhos{
+  -webkit-animation-fill-mode: both;
+  animation-fill-mode: both;
+  -webkit-animation-iteration-count: infinite;
+  animation-iteration-count: infinite;
+/* Chrome, Safari, Opera */
+	-webkit-animation-timing-function: linear;
+	-webkit-animation-direction: normal;
+	-webkit-animation-play-state: running;
+/* Standard syntax */
+	animation-timing-function: linear;
+	animation-direction: normal;
+	animation-play-state: running;
+/**/
+	-webkit-animation-name: quadraos_animacao_personagens_olhos;
+	animation-name: quadraos_animacao_personagens_olhos;	
+}
+
+@-webkit-keyframes quadraos_animacao_personagens_olhos {
+   from {
+	opacity:0;
+  }
+49%{
+	opacity:0;	
+	
+}
+50%{
+	opacity:1;	
+	
+}
+51%{
+	opacity:0;
+	
+}
+  to {
+	opacity:0;		  
+
+  }
+}
+
+@keyframes quadraos_animacao_personagens_olhos {
+   from {
+	opacity:0;
+  }
+49%{
+	opacity:0;	
+	
+}
+50%{
+	opacity:1;	
+	
+}
+51%{
+	opacity:0;
+	
+}
+  to {
+	opacity:0;		  
+
+  }
+}
+/* Dedo esquerdo Barbará */
+.animacao_dedo_e_barbara{
+  -webkit-animation-fill-mode: both;
+  animation-fill-mode: both;
+  -webkit-animation-duration: 500ms;
+	animation-duration: 500ms;
+  -webkit-animation-iteration-count: infinite;
+  animation-iteration-count: infinite;
+/* Chrome, Safari, Opera */
+	-webkit-animation-timing-function: linear;
+	-webkit-animation-direction: normal;
+	-webkit-animation-play-state: running;
+/* Standard syntax */
+	animation-timing-function: linear;
+	animation-direction: normal;
+	animation-play-state: running;
+/**/
+	-webkit-animation-name: quadraos_animacao_dedo_e_barbara;
+	animation-name: quadraos_animacao_dedo_e_barbara;	
+}
+
+@-webkit-keyframes quadraos_animacao_dedo_e_barbara {
+   from {
+	left:461px;
+	top:129px;
+	-ms-transform: rotate(0deg);
+    -webkit-transform: rotate(0deg);
+    transform: rotate(0deg);
+  }
+50%{
+	left:467px;
+	top:147px;
+	-ms-transform: rotate(-27deg);
+    -webkit-transform: rotate(-27deg);
+    transform: rotate(-27deg);
+	
+}
+  to {
+	left:461px;
+	top:129px;
+	-ms-transform: rotate(0deg);
+    -webkit-transform: rotate(0deg);
+    transform: rotate(0deg);  
+  }
+}
+
+@keyframes quadraos_animacao_dedo_e_barbara {
+   from {
+	left:461px;
+	top:129px;
+	-ms-transform: rotate(0deg);
+    -webkit-transform: rotate(0deg);
+    transform: rotate(0deg);
+  }
+50%{
+	left:467px;
+	top:147px;
+	-ms-transform: rotate(-27deg);
+    -webkit-transform: rotate(-27deg);
+    transform: rotate(-27deg);
+	
+}
+  to {
+	left:461px;
+	top:129px;
+	-ms-transform: rotate(0deg);
+    -webkit-transform: rotate(0deg);
+    transform: rotate(0deg);  
+  }
+}
+/* Dedo direiro Barbará */
+.animacao_dedo_d_barbara{
+  -webkit-animation-fill-mode: both;
+  animation-fill-mode: both;
+  -webkit-animation-duration: 300ms;
+	animation-duration: 300ms;
+  -webkit-animation-iteration-count: infinite;
+  animation-iteration-count: infinite;
+/* Chrome, Safari, Opera */
+	-webkit-animation-timing-function: linear;
+	-webkit-animation-direction: normal;
+	-webkit-animation-play-state: running;
+/* Standard syntax */
+	animation-timing-function: linear;
+	animation-direction: normal;
+	animation-play-state: running;
+/**/
+	-webkit-animation-name: quadraos_animacao_dedo_d_barbara;
+	animation-name: quadraos_animacao_dedo_d_barbara;	
+}
+
+@-webkit-keyframes quadraos_animacao_dedo_d_barbara {
+   from {
+	left:0px;
+	top:0px;
+	-ms-transform: rotate(0deg);
+    -webkit-transform: rotate(0deg);
+    transform: rotate(0deg);
+  }
+50%{
+	left:2px;
+	top:7px;
+	-ms-transform: rotate(10deg);
+    -webkit-transform: rotate(10deg);
+    transform: rotate(10deg);
+	
+}
+  to {
+	left:0px;
+	top:0px;
+	-ms-transform: rotate(0deg);
+    -webkit-transform: rotate(0deg);
+    transform: rotate(0deg);
+  }
+}
+
+@keyframes quadraos_animacao_dedo_d_barbara {
+   from {
+	left:0px;
+	top:0px;
+	-ms-transform: rotate(0deg);
+    -webkit-transform: rotate(0deg);
+    transform: rotate(0deg);
+  }
+50%{
+	left:2px;
+	top:7px;
+	-ms-transform: rotate(10deg);
+    -webkit-transform: rotate(10deg);
+    transform: rotate(10deg);
+	
+}
+  to {
+	left:0px;
+	top:0px;
+	-ms-transform: rotate(0deg);
+    -webkit-transform: rotate(0deg);
+    transform: rotate(0deg);
+  }
+}
+/* Movimento Pedro */
+.animacao_movimento_pedro{
+  -webkit-animation-fill-mode: both;
+  animation-fill-mode: both;
+  -webkit-animation-duration: 6s;
+	animation-duration: 6s;
+  -webkit-animation-iteration-count: infinite;
+  animation-iteration-count: infinite;
+/* Chrome, Safari, Opera */
+	-webkit-animation-timing-function: ease-in;
+	-webkit-animation-direction: normal;
+	-webkit-animation-play-state: running;
+/* Standard syntax */
+	animation-timing-function: ease-in;
+	animation-direction: normal;
+	animation-play-state: running;
+/**/
+	-webkit-animation-name: quadraos_animacao_movimento_pedro;
+	animation-name: quadraos_animacao_movimento_pedro;	
+}
+
+@-webkit-keyframes quadraos_animacao_movimento_pedro {
+   from {
+	-ms-transform: rotate(0deg);
+    -webkit-transform: rotate(0deg);
+    transform: rotate(0deg);
+  }
+50%{
+	-ms-transform: rotate(-9deg);
+    -webkit-transform: rotate(-9deg);
+    transform: rotate(-9deg);
+	
+}
+60%{
+	-ms-transform: rotate(0deg);
+    -webkit-transform: rotate(0deg);
+    transform: rotate(0deg);
+	
+}
+  to {
+	-ms-transform: rotate(0deg);
+    -webkit-transform: rotate(0deg);
+    transform: rotate(0deg);
+  }
+}
+
+@keyframes quadraos_animacao_movimento_pedro {
+   from {
+	-ms-transform: rotate(0deg);
+    -webkit-transform: rotate(0deg);
+    transform: rotate(0deg);
+  }
+50%{
+	-ms-transform: rotate(-9deg);
+    -webkit-transform: rotate(-9deg);
+    transform: rotate(-9deg);
+	
+}
+60%{
+	-ms-transform: rotate(0deg);
+    -webkit-transform: rotate(0deg);
+    transform: rotate(0deg);
+	
+}
+  to {
+	-ms-transform: rotate(0deg);
+    -webkit-transform: rotate(0deg);
+    transform: rotate(0deg);
+  }
+}
+
+/* Dedo direiro Pedro */
+.animacao_dedo_d_pedro{
+  -webkit-animation-fill-mode: both;
+  animation-fill-mode: both;
+  -webkit-animation-duration: 600ms;
+	animation-duration: 600ms;
+  -webkit-animation-iteration-count: infinite;
+  animation-iteration-count: infinite;
+/* Chrome, Safari, Opera */
+	-webkit-animation-timing-function: linear;
+	-webkit-animation-direction: normal;
+	-webkit-animation-play-state: running;
+/* Standard syntax */
+	animation-timing-function: linear;
+	animation-direction: normal;
+	animation-play-state: running;
+/**/
+	-webkit-animation-name: quadraos_animacao_dedo_d_pedro;
+	animation-name: quadraos_animacao_dedo_d_pedro;	
+}
+
+@-webkit-keyframes quadraos_animacao_dedo_d_pedro {
+   from {
+	left:0px;
+	top:0px;
+	-ms-transform: rotate(0deg);
+    -webkit-transform: rotate(0deg);
+    transform: rotate(0deg);
+  }
+50%{
+	left:0px;
+	top:8px;
+	-ms-transform: rotate(9deg);
+    -webkit-transform: rotate(9deg);
+    transform: rotate(9deg);
+	
+}
+  to {
+	left:0px;
+	top:0px;
+	-ms-transform: rotate(0deg);
+    -webkit-transform: rotate(0deg);
+    transform: rotate(0deg);
+  }
+}
+
+@keyframes quadraos_animacao_dedo_d_pedro {
+    from {
+	left:0px;
+	top:0px;
+	-ms-transform: rotate(0deg);
+    -webkit-transform: rotate(0deg);
+    transform: rotate(0deg);
+  }
+50%{
+	left:0px;
+	top:8px;
+	-ms-transform: rotate(9deg);
+    -webkit-transform: rotate(9deg);
+    transform: rotate(9deg);
+	
+}
+  to {
+	left:0px;
+	top:0px;
+	-ms-transform: rotate(0deg);
+    -webkit-transform: rotate(0deg);
+    transform: rotate(0deg);
+  }
+}
+/* Dedo direiro Pedro */
+.animacao_dedo_e_pedro{
+  -webkit-animation-fill-mode: both;
+  animation-fill-mode: both;
+  -webkit-animation-duration: 400ms;
+	animation-duration: 400ms;
+  -webkit-animation-iteration-count: infinite;
+  animation-iteration-count: infinite;
+/* Chrome, Safari, Opera */
+	-webkit-animation-timing-function: linear;
+	-webkit-animation-direction: normal;
+	-webkit-animation-play-state: running;
+/* Standard syntax */
+	animation-timing-function: linear;
+	animation-direction: normal;
+	animation-play-state: running;
+/**/
+	-webkit-animation-name: quadraos_animacao_dedo_e_pedro;
+	animation-name: quadraos_animacao_dedo_e_pedro;	
+}
+
+@-webkit-keyframes quadraos_animacao_dedo_e_pedro {
+   from {
+	left:0px;
+	top:0px;
+	-ms-transform: rotate(0deg);
+    -webkit-transform: rotate(0deg);
+    transform: rotate(0deg);
+  }
+50%{
+	left:2px;
+	top:6px;
+	-ms-transform: rotate(-14deg);
+    -webkit-transform: rotate(-14deg);
+    transform: rotate(-14deg);
+	
+}
+  to {
+	left:0px;
+	top:0px;
+	-ms-transform: rotate(0deg);
+    -webkit-transform: rotate(0deg);
+    transform: rotate(0deg);
+  }
+}
+
+@keyframes quadraos_animacao_dedo_e_pedro {
+   from {
+	left:0px;
+	top:0px;
+	-ms-transform: rotate(0deg);
+    -webkit-transform: rotate(0deg);
+    transform: rotate(0deg);
+  }
+50%{
+	left:2px;
+	top:6px;
+	-ms-transform: rotate(-14deg);
+    -webkit-transform: rotate(-14deg);
+    transform: rotate(-14deg);
+	
+}
+  to {
+	left:0px;
+	top:0px;
+	-ms-transform: rotate(0deg);
+    -webkit-transform: rotate(0deg);
+    transform: rotate(0deg);
+  }
+}
+/* Braços Larissa */
+.animacao_bracos_larissa{
+  -webkit-animation-fill-mode: both;
+  animation-fill-mode: both;
+  -webkit-animation-duration: 3s;
+	animation-duration: 3s;
+  -webkit-animation-iteration-count: infinite;
+  animation-iteration-count: infinite;
+/* Chrome, Safari, Opera */
+	-webkit-animation-timing-function: ease;
+	-webkit-animation-direction: normal;
+	-webkit-animation-play-state: running;
+/* Standard syntax */
+	animation-timing-function: ease;
+	animation-direction: normal;
+	animation-play-state: running;
+/**/
+	-webkit-animation-name: quadraos_animacao_bracos_larissa;
+	animation-name: quadraos_animacao_bracos_larissa;	
+}
+
+@-webkit-keyframes quadraos_animacao_bracos_larissa {
+   from {
+	-ms-transform: rotate(-5deg);
+    -webkit-transform: rotate(-5deg);
+    transform: rotate(-5deg);
+  }
+50%{
+	-ms-transform: rotate(2deg);
+    -webkit-transform: rotate(2deg);
+    transform: rotate(2deg);
+	
+}
+  to {
+	-ms-transform: rotate(-5deg);
+    -webkit-transform: rotate(-5deg);
+    transform: rotate(-5deg);
+  }
+}
+@keyframes quadraos_animacao_bracos_larissa {
+   from {
+	-ms-transform: rotate(-5deg);
+    -webkit-transform: rotate(-5deg);
+    transform: rotate(-5deg);
+  }
+50%{
+	-ms-transform: rotate(2deg);
+    -webkit-transform: rotate(2deg);
+    transform: rotate(2deg);
+	
+}
+  to {
+	-ms-transform: rotate(-5deg);
+    -webkit-transform: rotate(-5deg);
+    transform: rotate(-5deg);
+  }
+}
+/* Dedo direiro Larissa */
+.animacao_dedo_d_larissa{
+  -webkit-animation-fill-mode: both;
+  animation-fill-mode: both;
+  -webkit-animation-duration: 400ms;
+	animation-duration: 400ms;
+  -webkit-animation-iteration-count: infinite;
+  animation-iteration-count: infinite;
+/* Chrome, Safari, Opera */
+	-webkit-animation-timing-function: linear;
+	-webkit-animation-direction: normal;
+	-webkit-animation-play-state: running;
+/* Standard syntax */
+	animation-timing-function: linear;
+	animation-direction: normal;
+	animation-play-state: running;
+/**/
+	-webkit-animation-name: quadraos_animacao_dedo_d_larissa;
+	animation-name: quadraos_animacao_dedo_d_larissa;	
+}
+
+@-webkit-keyframes quadraos_animacao_dedo_d_larissa {
+   from {
+	left:0px;
+	top:0px;
+	-ms-transform: rotate(0deg);
+    -webkit-transform: rotate(0deg);
+    transform: rotate(0deg);
+  }
+50%{
+	left:-1px;
+	top:5px;
+	-ms-transform: rotate(6deg);
+    -webkit-transform: rotate(6deg);
+    transform: rotate(6deg);
+	
+}
+  to {
+	left:0px;
+	top:0px;
+	-ms-transform: rotate(0deg);
+    -webkit-transform: rotate(0deg);
+    transform: rotate(0deg);
+  }
+}
+
+@keyframes quadraos_animacao_dedo_d_larissa {
+   from {
+	left:0px;
+	top:0px;
+	-ms-transform: rotate(0deg);
+    -webkit-transform: rotate(0deg);
+    transform: rotate(0deg);
+  }
+50%{
+	left:-1px;
+	top:5px;
+	-ms-transform: rotate(6deg);
+    -webkit-transform: rotate(6deg);
+    transform: rotate(6deg);
+	
+}
+  to {
+	left:0px;
+	top:0px;
+	-ms-transform: rotate(0deg);
+    -webkit-transform: rotate(0deg);
+    transform: rotate(0deg);
+  }
+}
+/* Dedo esquerdo Larissa */
+.animacao_dedo_e_larissa{
+  -webkit-animation-fill-mode: both;
+  animation-fill-mode: both;
+  -webkit-animation-duration: 550ms;
+	animation-duration: 550ms;
+  -webkit-animation-iteration-count: infinite;
+  animation-iteration-count: infinite;
+/* Chrome, Safari, Opera */
+	-webkit-animation-timing-function: ease;
+	-webkit-animation-direction: normal;
+	-webkit-animation-play-state: running;
+/* Standard syntax */
+	animation-timing-function: ease;
+	animation-direction: normal;
+	animation-play-state: running;
+/**/
+	-webkit-animation-name: quadraos_animacao_dedo_e_larissa;
+	animation-name: quadraos_animacao_dedo_e_larissa;	
+}
+
+@-webkit-keyframes quadraos_animacao_dedo_e_larissa {
+   from {
+	left:0px;
+	top:0px;
+	-ms-transform: rotate(0deg);
+    -webkit-transform: rotate(0deg);
+    transform: rotate(0deg);
+  }
+50%{
+	left:2px;
+	top:-7px;
+	-ms-transform: rotate(12deg);
+    -webkit-transform: rotate(12deg);
+    transform: rotate(12deg);
+	
+}
+  to {
+	left:0px;
+	top:0px;
+	-ms-transform: rotate(0deg);
+    -webkit-transform: rotate(0deg);
+    transform: rotate(0deg);
+  }
+}
+
+@keyframes quadraos_animacao_dedo_e_larissa {
+    from {
+	left:0px;
+	top:0px;
+	-ms-transform: rotate(0deg);
+    -webkit-transform: rotate(0deg);
+    transform: rotate(0deg);
+  }
+50%{
+	left:2px;
+	top:-7px;
+	-ms-transform: rotate(12deg);
+    -webkit-transform: rotate(12deg);
+    transform: rotate(12deg);
+	
+}
+  to {
+	left:0px;
+	top:0px;
+	-ms-transform: rotate(0deg);
+    -webkit-transform: rotate(0deg);
+    transform: rotate(0deg);
+  }
+}
+/* Perna Barbará */
+.animacao_personagem_barbara_perna{
+  -webkit-animation-fill-mode: both;
+  animation-fill-mode: both;
+  -webkit-animation-duration: 1550ms;
+	animation-duration: 1550ms;
+  -webkit-animation-iteration-count: infinite;
+  animation-iteration-count: infinite;
+/* Chrome, Safari, Opera */
+	-webkit-animation-timing-function: ease;
+	-webkit-animation-direction: normal;
+	-webkit-animation-play-state: running;
+/* Standard syntax */
+	animation-timing-function: ease;
+	animation-direction: normal;
+	animation-play-state: running;
+/**/
+	-webkit-animation-name: quadraos_personagem_barbara_perna;
+	animation-name: quadraos_personagem_barbara_perna;	
+}
+
+@-webkit-keyframes quadraos_personagem_barbara_perna {
+   from {
+	-ms-transform: rotate(-6deg);
+    -webkit-transform: rotate(-6deg);
+    transform: rotate(-6deg);
+  }
+50%{
+	-ms-transform: rotate(13deg);
+    -webkit-transform: rotate(13deg);
+    transform: rotate(13deg);
+	
+}
+  to {
+	-ms-transform: rotate(-6deg);
+    -webkit-transform: rotate(-6deg);
+    transform: rotate(-6deg);
+  }
+}
+
+@keyframes quadraos_personagem_barbara_perna {
+   from {
+	-ms-transform: rotate(-6deg);
+    -webkit-transform: rotate(-6deg);
+    transform: rotate(-6deg);
+  }
+50%{
+	-ms-transform: rotate(13deg);
+    -webkit-transform: rotate(13deg);
+    transform: rotate(13deg);
+	
+}
+  to {
+	-ms-transform: rotate(-6deg);
+    -webkit-transform: rotate(-6deg);
+    transform: rotate(-6deg);
+  }
+}
+
+/* Entrada da cena inicial */
+.animacao_entrada_inicial{
+  -webkit-animation-fill-mode: both;
+  animation-fill-mode: both;
+  -webkit-animation-duration: 8s;
+	animation-duration: 8s;
+  -webkit-animation-iteration-count: 1;
+  animation-iteration-count: 1;
+    -webkit-animation-delay: 500ms;
+  animation-delay: 500ms;
+/* Chrome, Safari, Opera */
+	-webkit-animation-timing-function: ease;
+	-webkit-animation-direction: normal;
+	-webkit-animation-play-state: running;
+/* Standard syntax */
+	animation-timing-function: ease;
+	animation-direction: normal;
+	animation-play-state: running;
+/**/
+	-webkit-animation-name: quadraos_entrada_inicial;
+	animation-name: quadraos_entrada_inicial;	
+}
+
+@-webkit-keyframes quadraos_entrada_inicial {
+   from {
+	left:715px;
+	top:-860px;
+	-webkit-transform: scale3d(8, 8, 8);
+    -ms-transform: scale3d(8, 8, 8);
+    transform: scale3d(8, 8, 8);
+  to {
+	left:-1px;
+	top:-1px;
+	-webkit-transform: scale3d(1, 1, 1);
+    -ms-transform: scale3d(1, 1, 1);
+    transform: scale3d(1, 1, 1);
+  }
+}
+
+@keyframes quadraos_entrada_inicial {
+   from {
+	left:715px;
+	top:-860px;
+	-webkit-transform: scale3d(8, 8, 8);
+    -ms-transform: scale3d(8, 8, 8);
+    transform: scale3d(8, 8, 8);
+  to {
+	left:-1px;
+	top:-1px;
+	-webkit-transform: scale3d(1, 1, 1);
+    -ms-transform: scale3d(1, 1, 1);
+    transform: scale3d(1, 1, 1);
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

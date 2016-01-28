@@ -1,0 +1,407 @@
+<!doctype html>
+<html lang="pt-br">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<link rel="stylesheet" href="css/style.css">
+	<link rel="stylesheet" href="css/tempos_animacoes.css">
+	<link rel="stylesheet" href="css/animacoes.css">
+	<link rel="stylesheet" href="css/animacoes_personagens.css">
+	<link rel="stylesheet" href="css/animacoes_fala.css">
+</head>
+<body id="img_body">
+	
+<!-- HTML DO OED AQUI -->
+<div class="OED">
+	<!-- Tags de áudio para falas sincronizadas -->
+		<span class="display:none">
+			<audio id="audio_inicial_adulto" onended="ir_etapa_desafio_larissa()">
+				<source src="./media/audio/audio_inicial_adulto.mp3" type="audio/mpeg">
+			</audio>
+			<audio id="audio_desafio_larissa" onended="ir_etapa_tutorial()">
+				<source src="./media/audio/audio_desafio_larissa.mp3" type="audio/mpeg">
+			</audio>
+			<audio id="audio_desafio_pedro" onended="">
+				<source src="./media/audio/audio_desafio_pedro.mp3" type="audio/mpeg">
+			</audio>
+			<audio id="audio_desafio_barbara" onended="">
+				<source src="./media/audio/audio_desafio_barbara.mp3" type="audio/mpeg">
+			</audio>
+			<audio id="audio_encerramento_adulto" onended="fim_oed_reiniciar()">
+				<source src="./media/audio/audio_encerramento_adulto.mp3" type="audio/mpeg">
+			</audio>				
+		</span>
+	
+	<!-- Fim das tags de áudio para falas sincronizadas -->
+	<!-- Tela inicial: animação -->
+	<div id="quadro_fade"></div>
+	<div id="inicial_area">	
+		<div id="incial_fundo_sala"></div>
+		<div id="incial_fundo_mesa"></div>
+		<div id="incial_fundo_televisao"></div>
+		<!-- Personagens -->
+		<!-- Larissa -->
+		<div id="inicial_personagem_larissa">
+			<div id="inicial_personagem_larissa_bracos" class="animacao_bracos_larissa">
+				<div id="inicial_personagem_larissa_dedo_e" class="animacao_dedo_e_larissa"></div>
+				<div id="inicial_personagem_larissa_dedo_d" class="animacao_dedo_d_larissa"></div>
+			</div>
+			<div id="inicial_personagem_larissa_olhos" class="animacao_personagens_olhos anima_tempo_7s"></div>
+		</div>
+		<!-- Fim Larissa -->
+		<!-- Pedro -->
+		<div id="inicial_personagem_pedro">
+			<div id="inicial_personagem_pedro_tronco" class="animacao_movimento_pedro">
+				<div id="inicial_personagem_pedro_dedo_e" class="animacao_dedo_e_pedro"></div>
+				<div id="inicial_personagem_pedro_dedo_d" class="animacao_dedo_d_pedro"></div>
+				<div id="inicial_personagem_pedro_olhos" class="animacao_personagens_olhos anima_tempo_6s"></div>
+			</div>
+		</div>
+		<!-- Fim Pedro -->
+		<!-- Barbará -->
+		<div id="inicial_personagem_barbara">
+			<div id="inicial_personagem_barbara_perna" class="animacao_personagem_barbara_perna"></div>
+			<div id="inicial_personagem_barbara_olhos" class="animacao_personagens_olhos anima_tempo_8s"></div>
+			<div id="inicial_personagem_barbara_dedo_d" class="animacao_dedo_d_barbara"></div>
+		</div>
+		<div id="inicial_personagem_barbara_dedo_e" class="animacao_dedo_e_barbara"></div>
+		<!-- Fim Barbará-->
+		<div id="inicial_personagem_adulto" class="_animacao_andar_adulto">
+			<div id="inicial_personagem_adulto_tronco"></div>
+			<div id="inicial_personagem_adulto_braco_e" class="_animacao_braco_e_adulto"></div>
+			<div id="inicial_personagem_adulto_braco_d" class="_animacao_braco_d_adulto"></div>
+			<div id="inicial_personagem_adulto_perna_d" class="_animacao_perna_d_adulto"></div>
+			<div id="inicial_personagem_adulto_perna_e" class="_animacao_perna_e_adulto"></div>
+			<!-- -->
+			<div id="inicial_personagem_adulto_boca" class="animacao_fala_inicial_adulto"></div>
+		</div>
+		<!-- Personagens com ângulo diferente -->
+		<div id="inicial_personagem_larissa_costas"></div>
+		<div id="inicial_personagem_pedro_costas"></div>
+		<div id="inicial_personagem_barbara_costas"></div>
+		<!-- Balões de fala -->
+		<div id="inicial_balao_fala_adulto">
+			<div id="inicial_texto_adulto">Oi, crianças! Eu tenho uma tarefa para vocês.</div>
+		</div>		
+		<div id="inicial_balao_fala_pedro">
+			<div id="inicial_texto_pedro">Que tarefa?</div>
+		</div>			
+	</div>
+	<!-- Fim da tela inicial: animação -->
+	<!-- Tela de explicação: animação -->
+	<div id="explicacao_area">
+		<div id="explicacao_fundo_sala"></div>
+		<div id="explicacao_personagem_adulto">
+			<div id="explicacao_personagem_adulto_boca"></div>
+		</div>
+		<!-- Balões de fala -->
+		<div id="explicacao_balao_fala_1">
+			<div id="explicacao_texto_fala_1">Acabei de saber de uma campanha de doações e pensei em contribuirmos.</div>
+		</div>
+		<div id="explicacao_balao_fala_2">
+			<div id="explicacao_texto_fala_2">Nós precisamos juntar <b style="font-size:36px">frações</b> de alguns objetos aqui de casa para auxiliar na campanha.</div>
+		</div>
+		<div id="explicacao_balao_fala_3">
+			<div id="explicacao_texto_fala_3">Por isso, tenho um desafio para cada um de vocês.</div>
+		</div>
+		
+	</div>	
+	<!-- Fim da tela de explicação: animação -->
+	<!-- Tela de desafio -->
+	<div id="desafio_area">
+		<div id="desafio_fundo"></div>
+		<div id="desafio_balao_fala_1">
+			<div id="desafio_balao_fala_1_texto">
+				<span id="desafio_fala_1_texto_larissa">O primeiro desafio é para você, <b>Larissa</b>. Você precisa procurar no seu quarto os brinquedos desta lista.</span>
+				<span id="desafio_fala_1_texto_pedro">O segundo desafio é para você, <b>Pedro</b>. Pegue algumas roupas no guarda-roupa.</span>
+				<span id="desafio_fala_1_texto_barbara">O terceiro e último desafio é para você, <b>Bárbara</b>. Procure na cozinha os alimentos desta lista.</span>
+			</div>
+		</div>
+		<div id="desafio_balao_fala_2">
+			<div id="desafio_balao_fala_2_texto">
+				<span id="desafio_fala_2_texto_larissa">Depois de achá-los, coloque-os na caixa Creche ou na caixa Orfanato.</span>
+				<span id="desafio_fala_2_texto_pedro">Depois de achá-las, coloque-as na caixa Creche, na caixa Orfanato ou na caixa Asilo.</span>
+				<span id="desafio_fala_2_texto_barbara">Depois de achá-los, coloque-os na caixa Creche, na caixa Orfanato, na caixa Asilo ou na caixa Cidade.</span>
+			</div>
+		</div>
+		<div id="desafio_balao_fala_3">
+			<div id="desafio_balao_fala_3_texto">
+				<span id="desafio_fala_3_texto_barbara">Esta última caixa vai para um município que foi atingido por uma grande enchente.</span>
+			</div>
+		</div>		
+		<div id="desafio_personagem_adulto">
+			<div id="desafio_personagem_adulto_boca"></div>
+			<div id="desafio_personagem_adulto_boca_2"></div>
+			<div id="desafio_personagem_adulto_boca_3" class="animacao_desafio_fala_2"></div>
+		</div>
+		<div id="desafio_painel_lista">
+			<div id="desafio_lista_titulo">Lista de objetos</div>
+			<div id="desafio_lista_item_1">
+				<span id="desafio_larissa_item_1">Robô</span>
+				<span id="desafio_pedro_item_1">Camisa</span>
+				<span id="desafio_barbara_item_1">Pacote</span>
+			</div>
+			<div id="desafio_lista_item_2">
+				<span id="desafio_larissa_item_2">Dinossauro</span>
+				<span id="desafio_pedro_item_2">Bermuda</span>
+				<span id="desafio_barbara_item_2">Lata</span>
+			</div>
+		</div>
+		<div id="desafio_personagem_larissa"></div>
+		<div id="desafio_personagem_pedro"></div>
+		<div id="desafio_personagem_barbara"></div>
+		<!-- Caixas -->
+		<div id="desafio_caixa_creche"></div>
+		<div id="desafio_caixa_orfanato"></div>
+		<div id="desafio_caixa_asilo"></div>		
+		<div id="desafio_caixa_cidade"></div>		
+	</div>		
+	<!-- Fim da tela de desafio -->
+	<!-- Tela de tutorial -->
+	<div id="tutorial_area">
+		<!-- Controles -->
+		<div id="tutorial_btn_direita"></div>
+		<div id="tutorial_btn_esquerda"></div>
+		<div id="tutorial_btn_comecar">Começar</div>
+		<!-- Painéis -->
+		<div id="tutorial_painel_passo_1">Tutorial: passo 1
+			<div id="tutorial_painel_texto_1">Ajude-me a encontrar todos os brinquedos espalhados no meu quarto.</div>
+		</div>
+		<div id="tutorial_painel_passo_2">Tutorial: passo 2
+			<div id="tutorial_painel_texto_2">Para isso, arraste os brinquedos para as caixas <b>respeitando a fração</b> indicada em cada destino.</div>
+		</div>
+		<div id="tutorial_painel_passo_3">Tutorial: passo 3
+			<div id="tutorial_painel_texto_3">Após arrastar todos os objetos<br />para a caixa adequada, <br />confirme a escolha clicando<br /> em Confirmar.</div>
+		</div>
+		<!-- Imagens -->
+		<div id="tutorial_imagem_fase_1"></div>
+		<div id="tutorial_imagem_fase_2"></div>
+		<div id="tutorial_imagem_fase_3"></div>
+		<div id="tutorial_imagem_fase_4"></div>
+	</div>
+	<!-- Fim da tela de tutorial -->	
+	<!-- Tela de jogo para Larissa -->
+	<div id="jogo_larissa_area">
+		<div id="jogo_larissa_btn_lista">
+			<div id="jogo_larissa_rotulo_lista">Ver lista<br />de objetos</div>
+		</div>
+		<!-- Painel da lista e sombra -->
+<span id="grupo_painel_larissa" style="display:none">
+		<div id="jogo_larissa_painel_lista">
+			<div id="jogo_larissa_titulo">Lista de objetos</div>
+			<div id="jogo_larissa_lista_item_1">Robô</div>
+			<div id="jogo_larissa_lista_item_2">Dinossauro</div>
+		</div>
+		<div id="jogo_larissa_painel_btn_fechar">Fechar</div>
+		<div id="jogo_larissa_sombra_painel"></div>
+</span>
+		<!-- Fim do painel da lista e sombra -->
+	
+		<div id="jogo_larissa_fundo"></div>
+		<div id="jogo_larissa_cenario"></div>
+		<div id="jogo_larissa_personagem"></div>
+		<!-- Caixas -->
+		<div id="jogo_larissa_frente_creche">
+			<div id="jogo_larissa_fracao_caixa_creche"><span id="jogo_larissa_fracao_creche">4</span><br/>9</div>
+		</div>
+		<div id="jogo_larissa_caixa_creche"></div>
+		<div id="jogo_larissa_frente_orfanato">
+			<div id="jogo_larissa_fracao_caixa_orfanato"><span id="jogo_larissa_fracao_orfanato">5</span><br/>9</div>
+		</div>
+		<div id="jogo_larissa_caixa_orfanato"></div>
+		<!-- Objetos para arrastar e soltar -->
+		<!-- Robôs -->
+		<div id="jogo_larissa_objeto_1"></div>
+		<div id="jogo_larissa_objeto_2"></div>
+		<div id="jogo_larissa_objeto_3"></div>
+		<div id="jogo_larissa_objeto_4"></div>
+		<!-- Dinossauros -->
+		<div id="jogo_larissa_objeto_5"></div>
+		<div id="jogo_larissa_objeto_6"></div>
+		<div id="jogo_larissa_objeto_7"></div>
+		<div id="jogo_larissa_objeto_8"></div>	
+		<div id="jogo_larissa_objeto_9"></div>	
+		<!-- Fim dos objetos para arrastar e soltar -->
+		<div id="jogo_larissa_btn_confirmar">Confirmar</div>
+		<div id="jogo_larissa_btn_refazer">Desfazer</div>
+	</div>
+	<!-- Fim da tela de jogo para Larissa -->
+	<!-- -->
+	<!-- Tela de jogo para Pedro -->
+	<div id="jogo_pedro_area">
+		<div id="jogo_pedro_cobertura_carpete"></div>
+		<div id="jogo_pedro_btn_lista">
+			<div id="jogo_pedro_rotulo_lista">Ver lista<br />de objetos</div>
+		</div>
+		<!-- Painel da lista e sombra -->
+<span id="grupo_painel_pedro" style="display:none">
+		<div id="jogo_pedro_painel_lista">
+			<div id="jogo_pedro_titulo">Lista de objetos</div>
+			<div id="jogo_pedro_lista_item_1">Camisa</div>
+			<div id="jogo_pedro_lista_item_2">Bermuda</div>
+		</div>
+		<div id="jogo_pedro_painel_btn_fechar">Fechar</div>
+		<div id="jogo_pedro_sombra_painel"></div>
+</span>
+		<!-- Fim do painel da lista e sombra -->		
+		<!-- -->
+		<div id="jogo_pedro_fundo"></div>
+		<div id="jogo_pedro_cenario"></div>
+		<div id="jogo_pedro_personagem"></div>
+		<!-- Caixas -->
+		<!-- Creche -->
+		<div id="jogo_pedro_frente_creche">
+			<div id="jogo_pedro_fracao_caixa_creche"><span id="jogo_pedro_fracao_creche">4</span><br/>12</div>
+		</div>
+		<div id="jogo_pedro_caixa_creche"></div>		
+		<!-- Orfanato -->
+		<div id="jogo_pedro_frente_orfanato">
+			<div id="jogo_pedro_fracao_caixa_orfanato"><span id="jogo_pedro_fracao_orfanato">5</span><br/>12</div>
+		</div>
+		<div id="jogo_pedro_caixa_orfanato"></div>			
+		<!-- Asilo -->
+		<div id="jogo_pedro_frente_asilo">
+			<div id="jogo_pedro_fracao_caixa_asilo"><span id="jogo_pedro_fracao_asilo">3</span><br/>12</div>
+		</div>
+		<div id="jogo_pedro_caixa_asilo"></div>			
+		<!-- Objetos para arrastar e soltar -->
+		<!-- Camisas -->
+		<div id="jogo_pedro_objeto_1"></div>
+		<div id="jogo_pedro_objeto_2"></div>
+		<div id="jogo_pedro_objeto_3"></div>
+		<div id="jogo_pedro_objeto_4"></div>		
+		<div id="jogo_pedro_objeto_5"></div>
+		<div id="jogo_pedro_objeto_6"></div>			
+		<!-- Camisas -->
+		<div id="jogo_pedro_objeto_7"></div>
+		<div id="jogo_pedro_objeto_8"></div>
+		<div id="jogo_pedro_objeto_9"></div>
+		<div id="jogo_pedro_objeto_10"></div>		
+		<div id="jogo_pedro_objeto_11"></div>
+		<div id="jogo_pedro_objeto_12"></div>			
+		<!-- Fim dos objetos para arrastar e soltar -->
+		<div id="jogo_pedro_btn_confirmar">Confirmar</div>
+		<div id="jogo_pedro_btn_refazer">Desfazer</div>		
+	</div>
+	<!-- Fim da tela de jogo para Pedro -->
+	<!-- -->
+	<!-- Tela de jogo para Bárbara -->
+	<div id="jogo_barbara_area">
+		<div id="jogo_barbara_btn_lista">
+			<div id="jogo_barbara_rotulo_lista">Ver lista<br />de objetos</div>
+		</div>
+		<!-- Painel da lista e sombra -->	
+<span id="grupo_painel_barbara" style="display:none">
+		<div id="jogo_barbara_painel_lista">
+			<div id="jogo_barbara_titulo">Lista de objetos</div>
+			<div id="jogo_barbara_lista_item_1">Pacote</div>
+			<div id="jogo_barbara_lista_item_2">Lata</div>
+		</div>
+		<div id="jogo_barbara_painel_btn_fechar">Fechar</div>
+		<div id="jogo_barbara_sombra_painel"></div>
+</span>
+		<!-- Fim do painel da lista e sombra -->
+		<div id="jogo_barbara_fundo"></div>
+		<div id="jogo_barbara_cenario"></div>
+		<div id="jogo_barbara_personagem"></div>
+		<!-- Caixas -->
+		<!-- Creche -->
+		<div id="jogo_barbara_frente_creche">
+			<div id="jogo_barbara_fracao_caixa_creche"><span id="jogo_barbara_fracao_creche">4</span><br/>15</div>
+		</div>
+		<div id="jogo_barbara_caixa_creche"></div>		
+		<!-- Orfanato -->
+		<div id="jogo_barbara_frente_orfanato">
+			<div id="jogo_barbara_fracao_caixa_orfanato"><span id="jogo_barbara_fracao_orfanato">4</span><br/>15</div>
+		</div>
+		<div id="jogo_barbara_caixa_orfanato"></div>	
+		<!-- Asilo -->
+		<div id="jogo_barbara_frente_asilo">
+			<div id="jogo_barbara_fracao_caixa_asilo"><span id="jogo_barbara_fracao_asilo">4</span><br/>15</div>
+		</div>
+		<div id="jogo_barbara_caixa_asilo"></div>			
+		<!-- Cidade -->
+		<div id="jogo_barbara_frente_cidade">
+			<div id="jogo_barbara_fracao_caixa_cidade"><span id="jogo_barbara_fracao_cidade">3</span><br/>15</div>
+		</div>
+		<div id="jogo_barbara_caixa_cidade"></div>			
+		<!-- Objetos para arrastar e soltar -->
+		<!-- Pacotes -->
+		<div id="jogo_barbara_objeto_1"></div>
+		<div id="jogo_barbara_objeto_2"></div>
+		<div id="jogo_barbara_objeto_3"></div>
+		<div id="jogo_barbara_objeto_4"></div>
+		<div id="jogo_barbara_objeto_5"></div>
+		<div id="jogo_barbara_objeto_6"></div>
+		<div id="jogo_barbara_objeto_7"></div>
+		<!-- Latas -->
+		<div id="jogo_barbara_objeto_8"></div>	
+		<div id="jogo_barbara_objeto_9"></div>	
+		<div id="jogo_barbara_objeto_10"></div>	
+		<div id="jogo_barbara_objeto_11"></div>		
+		<div id="jogo_barbara_objeto_12"></div>
+		<div id="jogo_barbara_objeto_13"></div>	
+		<div id="jogo_barbara_objeto_14"></div>	
+		<div id="jogo_barbara_objeto_15"></div>	
+		<!-- Fim dos objetos para arrastar e soltar -->
+		<div id="jogo_barbara_btn_confirmar">Confirmar</div>
+		<div id="jogo_barbara_btn_refazer">Desfazer</div>		
+		
+	</div>
+	<!-- Fim da tela de jogo para Bárbara -->
+	<!-- Tela de conclusão para o jogo da Larissa -->
+	<div id="conclusao_larissa_area">
+		<div id="conclusao_larissa_fundo"></div>
+		<div id="conclusao_larissa_solo"></div>
+		<div id="conclusao_larissa_personagens"></div>
+		<div id="conclusao_larissa_texto"></div>
+	</div>
+	<!-- Fim da tela de conclusão para o jogo da Larissa -->
+	<!-- Tela de devolutiva de erros -->
+	<div id="devolutiva_area">
+		<div id="devolutiva_fundo"></div>
+		<div id="devolutiva_painel">ATENÇÃO
+			<div id="devolutiva_textos">
+				<span id="devolutva_texto_larissa">A quantidade de brinquedos em cada caixa não está correta.<br /><br />Tente colocar as quantidades conforme as frações escritas nas caixas.</span>
+				<span id="devolutva_texto_pedro">A quantidade de roupas em cada caixa não está correta.<br /><br />Tente colocar as quantidades conforme as frações escritas nas caixas.</span>
+				<span id="devolutva_texto_barbara">A quantidade de alimentos em cada caixa não está correta.<br /><br />Tente colocar as quantidades conforme as frações escritas nas caixas.</span>
+			</div>
+		</div>
+		<div id="devolutiva_btn">Tentar novamente</div>
+	</div>
+	<!-- Fim da tela de devolutiva de erros -->
+	<!-- Tela de encerramento: animação -->
+	<div id="encerramento_area">	
+		<div id="encerramento_fundo"></div>
+		<!-- Personagens -->		
+		<div id="encerramento_personagem_adulto_1"></div>	
+		<div id="encerramento_personagem_adulto_2">
+			<div id="encerramento_personagem_adulto_2_boca"></div>
+		</div>	
+		<div id="encerramento_personagem_larissa"></div>	
+		<div id="encerramento_personagem_pedro"></div>	
+		<div id="encerramento_personagem_barbara"></div>	
+		<!-- Balões de fala -->
+		<div id="encerramento_balao_pedro">
+			<div id="encerramento_texto_pedro">Conseguimos!<br />Conseguimos!</div>
+		</div>
+		<div id="encerramento_balao_barbara">
+			<div id="encerramento_texto_barbara">Conseguimos!<br />Conseguimos!</div>
+		</div>	
+		<div id="encerramento_balao_larissa">
+			<div id="encerramento_texto_larissa">Conseguimos!<br />Conseguimos!</div>
+		</div>	
+		<div id="encerramento_balao_adulto">
+			<div id="encerramento_texto_adulto">Estou orgulhoso! Vocês superaram os desafios das frações e contribuíram com doações às pessoas que delas precisam.<br />Parabéns!</div>
+		</div>		
+	</div>
+	<!-- Fim da tela de encerramento: animação -->
+</div>
+<!-- HTML DO OED AQUI -->
+
+
+	<!-- CARREGAMENTO DE SCRIPTS -->
+	<script type="text/javascript" src="../js/carrega_oed.js"></script>
+	<script type="text/javascript" src="js/funcoes.js"></script>	
+</body>	
+</html>

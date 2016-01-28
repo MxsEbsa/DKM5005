@@ -1,0 +1,2698 @@
+/* SEU CSS AQUI */
+/* Tela inicial */
+body{
+	background:#ffffff;
+	background-image: url("../img/fundo_oed_0.png");
+	background-repeat: no-repeat;
+	background-size:cover;
+	background-position: 0px 0px;	
+}
+#quadro_fade{
+	position:absolute;
+	width:1025px;
+	height:661px;
+	left:-1px;
+	top:-1px;
+	z-index:1000;
+	display:none;
+	background:#ffffff;
+}
+#inicial_area{
+	position:absolute;
+	width:1025px;
+	height:661px;
+	left:-1px;
+	top:-1px;
+	z-index:1;
+	display:none;
+	/**/
+	-webkit-transform: scale3d(1, 1, 1);
+    -ms-transform: scale3d(1, 1, 1);
+    transform: scale3d(1, 1, 1);
+}
+#incial_fundo_sala{
+	position:absolute;
+	width:1025px;
+	height:661px;
+	left:-1px;
+	top:-1px;
+	z-index:1;
+	background-image: url("../img/incial_fundo_sala.png");
+	background-repeat: repeat;
+	background-size:cover;
+	background-position: center center;
+}
+#incial_fundo_mesa{
+	position:absolute;
+	width:819px;
+	height:62px;
+	left:14px;
+	bottom:0px;
+	z-index:20;
+	background-image: url("../img/incial_fundo_mesa.png");
+	background-repeat: repeat;
+	background-size:cover;
+	background-position: center center;
+}
+#incial_fundo_televisao{
+	position:absolute;
+	width:346px;
+	height:289px;
+	left:235px;
+	bottom:0px;
+	z-index:21;
+	background-image: url("../img/incial_fundo_televisao.png");
+	background-repeat: repeat;
+	background-size:cover;
+	background-position: center center;
+}
+#inicial_personagem_larissa_bracos{
+	position:absolute;
+	width:159px;
+	height:345px;
+	left:0px;
+	top:0px;
+	z-index:2;
+	background-image: url("../img/inicial_personagem_larissa_bracos.png");
+	background-repeat: repeat;
+	background-size:cover;
+	background-position: center center;
+	background-position: center center;
+	-ms-transform: rotate(0deg);
+    -webkit-transform: rotate(0deg);
+    transform: rotate(0deg);
+}
+#inicial_personagem_larissa_dedo_e{
+	position:absolute;
+	width:159px;
+	height:345px;
+	left:0px;
+	top:0px;
+	z-index:2;
+	background-image: url("../img/inicial_personagem_larissa_dedo_e.png");
+	background-repeat: repeat;
+	background-size:cover;
+	background-position: center center;
+	background-position: center center;
+	-ms-transform: rotate(0deg);
+    -webkit-transform: rotate(0deg);
+    transform: rotate(0deg);
+}
+#inicial_personagem_larissa_dedo_d{
+	position:absolute;
+	width:159px;
+	height:345px;
+	left:0px;
+	top:0px;
+	z-index:2;
+	background-image: url("../img/inicial_personagem_larissa_dedo_d.png");
+	background-repeat: repeat;
+	background-size:cover;
+	background-position: center center;
+	background-position: center center;
+	-ms-transform: rotate(0deg);
+    -webkit-transform: rotate(0deg);
+    transform: rotate(0deg);
+}
+#inicial_personagem_larissa{
+	position:absolute;
+	width:159px;
+	height:345px;
+	left:140px;
+	top:155px;
+	z-index:2;
+	background-image: url("../img/inicial_personagem_larissa.png");
+	background-repeat: repeat;
+	background-size:cover;
+	background-position: center center;
+}
+#inicial_personagem_larissa_olhos{
+	position:absolute;
+	width:159px;
+	height:345px;
+	left:0px;
+	top:0px;
+	z-index:2;
+	background-image: url("../img/inicial_personagem_larissa_olhos.png");
+	background-repeat: repeat;
+	background-size:cover;
+	background-position: center center;
+}
+#inicial_personagem_pedro{
+	position:absolute;
+	width:158px;
+	height:369px;
+	left:304px;
+	top:131px;
+	z-index:2;
+	background-image: url("../img/inicial_personagem_pedro.png");
+	background-repeat: repeat;
+	background-size:cover;
+	background-position: center center;
+	-ms-transform: rotate(0deg);
+    -webkit-transform: rotate(0deg);
+    transform: rotate(0deg);		
+}
+#inicial_personagem_pedro_tronco{
+	position:absolute;
+	width:158px;
+	height:369px;
+	left:0px;
+	top:3px;
+	z-index:2;
+	background-image: url("../img/inicial_personagem_pedro_tronco.png");
+	background-repeat: repeat;
+	background-size:cover;
+	background-position: center center;
+	-ms-transform: rotate(0deg);
+    -webkit-transform: rotate(0deg);
+    transform: rotate(0deg);		
+}
+#inicial_personagem_pedro_dedo_e{
+	position:absolute;
+	width:158px;
+	height:369px;
+	left:0px;
+	top:0px;
+	z-index:5;
+	background-image: url("../img/inicial_personagem_pedro_dedo_e.png");
+	background-repeat: repeat;
+	background-size:cover;
+	background-position: center center;
+	-ms-transform: rotate(0deg);
+    -webkit-transform: rotate(0deg);
+    transform: rotate(0deg);		
+}
+#inicial_personagem_pedro_dedo_d{
+	position:absolute;
+	width:158px;
+	height:369px;
+	left:0px;
+	top:0px;
+	z-index:5;
+	background-image: url("../img/inicial_personagem_pedro_dedo_d.png");
+	background-repeat: repeat;
+	background-size:cover;
+	background-position: center center;
+	-ms-transform: rotate(0deg);
+    -webkit-transform: rotate(0deg);
+    transform: rotate(0deg);		
+}
+#inicial_personagem_pedro_olhos{
+	position:absolute;
+	width:158px;
+	height:369px;
+	left:0px;
+	top:0px;
+	z-index:4;
+	background-image: url("../img/inicial_personagem_pedro_olhos.png");
+	background-repeat: repeat;
+	background-size:cover;
+	background-position: center center;
+}
+#inicial_personagem_barbara_dedo_e{
+	position:absolute;
+	width:171px;
+	height:354px;
+	left:461px;
+	top:129px;
+	z-index:2;
+	background-image: url("../img/inicial_personagem_barbara_dedo_e.png");
+	background-repeat: repeat;
+	background-size:cover;
+	background-position: center center;
+	-ms-transform: rotate(0deg);
+    -webkit-transform: rotate(0deg);
+    transform: rotate(0deg);		
+}
+#inicial_personagem_barbara_dedo_d{
+	position:absolute;
+	width:171px;
+	height:354px;
+	left:0px;
+	top:0px;
+	z-index:3;
+	background-image: url("../img/inicial_personagem_barbara_dedo_d.png");
+	background-repeat: repeat;
+	background-size:cover;
+	background-position: center center;
+	-ms-transform: rotate(0deg);
+    -webkit-transform: rotate(0deg);
+    transform: rotate(0deg);	
+}
+#inicial_personagem_barbara{
+	position:absolute;
+	width:171px;
+	height:354px;
+	left:461px;
+	top:129px;
+	z-index:3;
+	background-image: url("../img/inicial_personagem_barbara.png");
+	background-repeat: repeat;
+	background-size:cover;
+	background-position: center center;
+}
+#inicial_personagem_barbara_perna{
+	position:absolute;
+	width:250px;
+	height:250px;
+	left:11px;
+	top:125px;
+	z-index:6;
+	background-image: url("../img/inicial_personagem_barbara_perna.png");
+	background-repeat: repeat;
+	background-size:cover;
+	background-position: center center;
+	-ms-transform: rotate(0deg);
+    -webkit-transform: rotate(0deg);
+    transform: rotate(0deg);	
+}
+#inicial_personagem_barbara_olhos{
+	position:absolute;
+	width:171px;
+	height:354px;
+	left:0px;
+	top:0px;
+	z-index:2;
+	background-image: url("../img/inicial_personagem_barbara_olhos.png");
+	background-repeat: repeat;
+	background-size:cover;
+	background-position: center center;
+}
+#inicial_personagem_larissa_costas{
+	position:absolute;
+	width:155px;
+	height:417px;
+	left:55px;
+	bottom:66px;
+	z-index:2;
+	background-image: url("../img/jogo_larissa_personagem.png");
+	background-repeat: repeat;
+	background-size:cover;
+	background-position: center center;
+	display:none;
+}
+#inicial_personagem_pedro_costas{
+	position:absolute;
+	width:135px;
+	height:461px;
+	left:238px;
+	bottom:64px;
+	z-index:2;
+	background-image: url("../img/jogo_pedro_personagem.png");
+	background-repeat: repeat;
+	background-size:cover;
+	background-position: center center;
+	display:none;
+}
+#inicial_personagem_barbara_costas{
+	position:absolute;
+	width:154px;
+	height:443px;
+	left:435px;
+	bottom:63px;
+	z-index:2;
+	background-image: url("../img/jogo_barbara_personagem.png");
+	background-repeat: repeat;
+	background-size:cover;
+	background-position: center center;
+	display:none;
+}
+#inicial_personagem_adulto{
+	position:absolute;
+	width:393px;
+	height:625px;
+	left:950px;
+	top:14px;
+	z-index:3;
+	background-image: url("../img/inicial_personagem_adulto.png");
+	background-repeat: repeat;
+	background-size:cover;
+	background-position: center center;
+	display:none;
+}
+#inicial_personagem_adulto_boca{
+	position:absolute;
+	left:188px;
+	top:76px;
+	z-index:40;
+	background-image: url("../img/inicial_personagem_adulto_boca.png");
+	width:43px;
+	height:25px;
+	display:none;
+}
+
+
+#inicial_personagem_adulto_tronco{
+	position:absolute;
+	width:393px;
+	height:625px;
+	left:0px;
+	top:0px;
+	z-index:5;
+	/*background-image: url("../img/inicial_personagem_adulto_tronco.png");*/
+	background-repeat: repeat;
+	background-size:cover;
+	background-position: center center;
+	-ms-transform: rotate(0deg);
+    -webkit-transform: rotate(0deg);
+    transform: rotate(0deg);	
+}
+#inicial_personagem_adulto_braco_e{
+	position:absolute;
+	width:393px;
+	height:625px;
+	left:4px;
+	top:0px;
+	z-index:6;
+	/*background-image: url("../img/inicial_personagem_adulto_braco_e.png");*/
+	background-repeat: repeat;
+	background-size:cover;
+	background-position: center center;
+	-ms-transform: rotate(0deg);
+    -webkit-transform: rotate(0deg);
+    transform: rotate(0deg);	
+}
+#inicial_personagem_adulto_braco_d{
+	position:absolute;
+	width:393px;
+	height:625px;
+	left:0px;
+	top:0px;
+	z-index:1;
+	/*background-image: url("../img/inicial_personagem_adulto_braco_d.png");*/
+	background-repeat: repeat;
+	background-size:cover;
+	background-position: center center;
+	-ms-transform: rotate(0deg);
+    -webkit-transform: rotate(0deg);
+    transform: rotate(0deg);	
+}
+#inicial_personagem_adulto_perna_d{
+	position:absolute;
+	width:393px;
+	height:625px;
+	left:0px;
+	top:0px;
+	z-index:3;
+	/*background-image: url("../img/inicial_personagem_adulto_perna_d.png");*/
+	background-repeat: repeat;
+	background-size:cover;
+	background-position: center center;
+	-ms-transform: rotate(0deg);
+    -webkit-transform: rotate(0deg);
+    transform: rotate(0deg);
+}
+#inicial_personagem_adulto_perna_e{
+	position:absolute;
+	width:393px;
+	height:625px;
+	left:0px;
+	top:0px;
+	z-index:4;
+	/*background-image: url("../img/inicial_personagem_adulto_perna_e.png");*/
+	background-repeat: repeat;
+	background-size:cover;
+	background-position: center center;
+	-ms-transform: rotate(0deg);
+    -webkit-transform: rotate(0deg);
+    transform: rotate(0deg);	
+}
+#inicial_balao_fala_adulto{
+	position:absolute;
+	width:320px;
+	height:132px;
+	right:193px;
+	top:6px;
+	z-index:12;
+	background-image: url("../img/inicial_balao_fala_adulto.png");
+	background-repeat: repeat;
+	background-size:cover;
+	background-position: center center;
+	/**/
+	display:none;
+}
+#inicial_texto_adulto{
+	position:absolute;
+    width:240px;
+    left:13px;
+    top:35px;
+    font-family:'CronosPro-Regular', sans-serif;
+    font-size:25px;
+    text-align:center;
+    color:#000000;
+    font-weight:normal;
+    line-height:120%;
+}
+#inicial_balao_fala_pedro{
+	position:absolute;
+	width:221px;
+	height:100px;
+	left:324px;
+	top:35px;
+	z-index:12;
+	background-image: url("../img/inicial_balao_fala_pedro.png");
+	background-repeat: repeat;
+	background-size:cover;
+	background-position: center center;
+	/**/
+	display:none;
+}
+#inicial_texto_pedro{
+	position:absolute;
+    width:134px;
+    left:69px;
+    top:34px;
+    font-family:'CronosPro-Regular', sans-serif;
+    font-size:28px;
+    text-align:center;
+    color:#000000;
+    font-weight:normal;
+    line-height:120%;
+}
+/* Tela de explicação */
+#explicacao_area{
+	position:absolute;
+	width:1025px;
+	height:661px;
+	left:-1px;
+	top:-1px;
+	z-index:2;
+	display:none;
+}
+#explicacao_fundo_sala{
+	position:absolute;
+	width:1025px;
+	height:661px;
+	left:-1px;
+	top:-1px;
+	z-index:1;
+	background-image: url("../img/explicacao_fundo_sala.png");
+	background-repeat: repeat;
+	background-size:cover;
+	background-position: center center;
+}
+#explicacao_personagem_adulto{
+	position:absolute;
+	width:770px;
+	height:629px;
+	right:4px;
+	bottom:0px;
+	z-index:20;
+	background-image: url("../img/explicacao_personagem_adulto.png");
+	background-repeat: repeat;
+	background-size:cover;
+	background-position: center center;
+}
+#explicacao_personagem_adulto_boca{
+	position:absolute;
+	background-image: url("../img/explicacao_personagem_adulto_boca.png");
+	width:85px;
+	height:50px;	
+	left:337px;
+	top:190px;
+	z-index:20;
+	display:none;
+}
+#explicacao_balao_fala_1{
+	position:absolute;
+	width:457px;
+	height:248px;
+	left:104px;
+	top:22px;
+	z-index:12;
+	background-image: url("../img/explicacao_balao_fala_1.png");
+	background-repeat: repeat;
+	background-size:cover;
+	background-position: center center;
+	/**/
+	display:none;
+}
+#explicacao_texto_fala_1{
+	position:absolute;
+    width:308px;
+    left:30px;
+    top:40px;
+    font-family:'CronosPro-Regular', sans-serif;
+    font-size:35px;
+    text-align:center;
+    color:#000000;
+    font-weight:normal;
+    line-height:120%;
+}
+#explicacao_balao_fala_2{
+	position:absolute;
+	width:457px;
+	height:248px;
+	left:104px;
+	top:22px;
+	z-index:12;
+	background-image: url("../img/explicacao_balao_fala_2.png");
+	background-repeat: repeat;
+	background-size:cover;
+	background-position: center center;
+	/**/
+	display:none;
+}
+#explicacao_texto_fala_2{
+	position:absolute;
+    width:290px;
+    left:43px;
+    top:27px;
+    font-family:'CronosPro-Regular', sans-serif;
+    font-size:34px;
+    text-align:center;
+    color:#000000;
+    font-weight:normal;
+    line-height:116%;
+}
+#explicacao_balao_fala_3{
+	position:absolute;
+	width:456px;
+	height:214px;
+	left:106px;
+	top:51px;
+	z-index:12;
+	background-image: url("../img/explicacao_balao_fala_3.png");
+	background-repeat: repeat;
+	background-size:cover;
+	background-position: center center;
+	/**/
+	display:none;
+}
+#explicacao_texto_fala_3{
+	position:absolute;
+    width:290px;
+    left:43px;
+    top:43px;
+    font-family:'CronosPro-Regular', sans-serif;
+    font-size:36px;
+    text-align:center;
+    color:#000000;
+    font-weight:normal;
+    line-height:116%;
+}
+/* Tela de explicação */
+#desafio_area{
+	position:absolute;
+	width:1025px;
+	height:661px;
+	left:-1px;
+	top:-1px;
+	z-index:3;
+	background:#ffffff;
+	display:none;
+}
+#desafio_personagem_larissa{
+	position:absolute;
+	width:220px;
+	height:212px;
+	right:37px;
+	top:41px;
+	z-index:1;
+	background-image: url("../img/desafio_personagem_larissa.png");
+	background-repeat: repeat;
+	background-size:cover;
+	background-position: center center;
+	display:none;
+}
+#desafio_personagem_pedro{
+	position:absolute;
+	width:192px;
+	height:212px;
+	right:39px;
+	top:51px;
+	z-index:1;
+	background-image: url("../img/desafio_personagem_pedro.png");
+	background-repeat: repeat;
+	background-size:cover;
+	background-position: center center;
+	display:none;
+}
+#desafio_personagem_barbara{
+	position:absolute;
+	width:174px;
+	height:214px;
+	right:33px;
+	top:51px;
+	z-index:1;
+	background-image: url("../img/desafio_personagem_barbara.png");
+	background-repeat: repeat;
+	background-size:cover;
+	background-position: center center;
+	display:none;
+}
+#desafio_fundo{
+	position:absolute;
+	width:1025px;
+	height:661px;
+	left:-1px;
+	top:-1px;
+	z-index:2;
+	background-image: url("../img/desafio_fundo.png");
+	background-repeat: repeat;
+	background-size:cover;
+	background-position: center center;
+}
+#desafio_personagem_adulto{
+	position:absolute;
+	width:582px;
+	height:618px;
+	left:0px;
+	bottom:-6px;
+	z-index:10;
+	background-image: url("../img/desafio_personagem_adulto.png");
+	background-repeat: repeat;
+	background-size:cover;
+	background-position: center center;
+}
+#desafio_personagem_adulto_boca, #desafio_personagem_adulto_boca_2, #desafio_personagem_adulto_boca_3{
+	position:absolute;
+	width:85px;
+	height:50px;
+	left:164px;
+	top:175px;
+	z-index:2;
+	background-image: url("../img/desafio_personagem_adulto_boca.png");
+	background-repeat: repeat;
+	background-size:cover;
+	background-position: center center;
+	display:none;
+}
+#desafio_personagem_adulto_boca_2{
+	z-index:2;
+	background-image: url("../img/desafio_personagem_adulto_boca_2.png");
+	display:none;
+}
+#desafio_personagem_adulto_boca_3{
+	z-index:3;
+	background-image: url("../img/desafio_personagem_adulto_boca_3.png");
+	display:none;	
+}
+#desafio_balao_fala_1{
+	position:absolute;
+	width:497px;
+	height:266px;
+	left:267px;
+	top:16px;
+	z-index:12;
+	background-image: url("../img/desafio_balao_fala_1.png");
+	background-repeat: repeat;
+	background-size:cover;
+	background-position: center center;
+	/**/
+	display:none;
+}
+#desafio_balao_fala_2{
+	position:absolute;
+	width:434px;
+	height:236px;
+	left:267px;
+	top:26px;
+	z-index:12;
+	background-image: url("../img/desafio_balao_fala_2.png");
+	background-repeat: repeat;
+	background-size:cover;
+	background-position: center center;
+	/**/
+	display:none;
+}
+#desafio_balao_fala_3{
+	position:absolute;
+	width:468px;
+	height:211px;
+	left:272px;
+	top:37px;
+	z-index:12;
+	background-image: url("../img/desafio_balao_fala_3.png");
+	background-repeat: repeat;
+	background-size:cover;
+	background-position: center center;
+	/**/
+	display:none;
+}
+#desafio_balao_fala_1_texto{
+	position:absolute;
+    width:320px;
+    height:197px;
+    left:130px;
+    top:32px;
+    font-family:'CronosPro-Regular', sans-serif;
+    font-size:34px;
+    text-align:center;
+    color:#000000;
+    font-weight:normal;
+    line-height:120%;
+}
+#desafio_balao_fala_2_texto{
+	position:absolute;
+    width:258px;
+    height:146px;
+    left:129px;
+    top:40px;
+    font-family:'CronosPro-Regular', sans-serif;
+    font-size:34px;
+    text-align:center;
+    color:#000000;
+    font-weight:normal;
+    line-height:120%;
+}
+#desafio_balao_fala_3_texto{
+	position:absolute;
+    width:258px;
+    height:146px;
+    left:129px;
+    top:40px;
+    font-family:'CronosPro-Regular', sans-serif;
+    font-size:34px;
+    text-align:center;
+    color:#000000;
+    font-weight:normal;
+    line-height:120%;
+}
+#desafio_fala_1_texto_larissa, #desafio_fala_2_texto_larissa, #desafio_fala_1_texto_pedro, #desafio_fala_2_texto_pedro, #desafio_fala_1_texto_barbara, #desafio_fala_2_texto_barbara{
+	display:none;	
+}
+#desafio_fala_1_texto_barbara, #desafio_fala_2_texto_barbara{
+	display:none;	
+}
+#desafio_fala_1_texto_pedro{
+	font-size: 34px;
+    top: 19px;
+    position: absolute;
+
+}
+#desafio_fala_2_texto_pedro{
+    font-size: 33px;
+    top: -17px;
+    position: absolute;
+}
+#desafio_fala_1_texto_barbara{
+	font-size: 34px;
+    top: 0px;
+    position: absolute;
+
+}
+#desafio_fala_2_texto_barbara{
+    font-size: 28px;
+    top: -9px;
+    left: -12px;
+    position: absolute;
+    line-height: 115%;
+}
+
+#desafio_fala_3_texto_barbara{
+    font-size: 31px;
+    top: -6px;
+    left: -2px;
+    position: absolute;
+    line-height: 115%;
+    width: 285px;
+}
+#desafio_painel_lista{
+	position:absolute;
+	width:399px;
+	height:331px;
+	right:96px;
+	bottom:42px;
+	z-index:11;
+	background-image: url("../img/desafio_painel_lista.png");
+	background-repeat: repeat;
+	background-size:cover;
+	background-position: center center;
+	display:none;
+}
+#desafio_lista_item_1, #desafio_lista_item_2{
+	position:absolute;
+	width:141px;
+	height:141px;
+	top:99px;
+	z-index:1;
+	border-radius: 1000px;
+	font-family:'HighlanderStd-Medium', sans-serif;
+	font-size:30px;
+	text-align:center;
+	color:#000000;
+	font-weight:normal;
+	line-height:362px;
+	background-repeat: repeat;
+	background-size:cover;
+	background-position: center center;	
+
+}
+#desafio_larissa_item_1, #desafio_larissa_item_2, #desafio_pedro_item_1, #desafio_pedro_item_2, #desafio_barbara_item_1, #desafio_barbara_item_2{
+	display:none;
+}
+#desafio_barbara_item_1, #desafio_barbara_item_2{
+	display:inherit;	
+}
+
+#desafio_lista_item_1{
+	background-image: url("../img/desafio_barbara_item_1.png");
+	left:33px;
+}
+#desafio_lista_item_2{
+	background-image: url("../img/desafio_barbara_item_2.png");
+	right:36px;
+}
+#desafio_lista_titulo{
+	position:absolute;
+	width:100%;
+	top:16px;
+	left:0px;
+	z-index:2;
+	font-family:'HighlanderStd-Medium', sans-serif;
+	font-size:36px;
+	text-align:center;
+	color:#ffffff;
+	font-weight:normal;
+	text-shadow:3px 3px 5px #000000;
+}
+#desafio_caixa_creche, #desafio_caixa_orfanato, #desafio_caixa_asilo, #desafio_caixa_cidade{
+	position:absolute;
+	width:366px;
+	height:157px;
+	z-index:3;
+	background-repeat: repeat;
+	background-size:cover;
+	background-position: center center;
+	/*Escala*/
+	-webkit-transform: scale3d(1, 1, 1);
+    -ms-transform: scale3d(1, 1, 1);
+    transform: scale3d(1, 1, 1);
+	/**/
+	display:none;
+}
+#desafio_caixa_creche{
+	background-image: url("../img/desafio_caixa_creche.png");
+	left:432px;
+	top:262px;
+}
+#desafio_caixa_orfanato{
+	background-image: url("../img/desafio_caixa_orfanato.png");
+	left:704px;
+	top:272px;
+}
+#desafio_caixa_asilo{
+	background-image: url("../img/desafio_caixa_asilo.png");
+	left:432px;
+	top:425px;
+}
+#desafio_caixa_cidade{
+	background-image: url("../img/desafio_caixa_cidade.png");
+	left:704px;
+	top:435px;
+}
+/* Tela de tutorial */
+#tutorial_area{
+	position:absolute;
+	width:1025px;
+	height:661px;
+	left:-1px;
+	top:-1px;
+	z-index:4;
+	display:none;
+}
+#tutorial_imagem_fase_1, #tutorial_imagem_fase_2, #tutorial_imagem_fase_3, #tutorial_imagem_fase_4{
+	position:absolute;
+	width:1025px;
+	height:661px;
+	left:-1px;
+	top:-1px;
+	z-index:2;
+	background-repeat: repeat;
+	background-size:cover;
+	background-position: center center;
+}
+#tutorial_imagem_fase_1{
+	background-image: url("../img/tutorial_imagem_fase_1.jpg");
+	z-index:2;
+	display:none;
+}
+#tutorial_imagem_fase_2{
+	background-image: url("../img/tutorial_imagem_fase_2.jpg");
+	z-index:3;
+	display:none;	
+}
+#tutorial_imagem_fase_3{
+	background-image: url("../img/tutorial_imagem_fase_3.jpg");
+	z-index:4;
+	display:none;	
+}
+#tutorial_imagem_fase_4{
+	background-image: url("../img/tutorial_imagem_fase_4.jpg");
+	z-index:5;
+	display:none;	
+}
+#tutorial_btn_direita{
+	position:absolute;
+	width:99px;
+	height:110px;
+	right:-10px;
+	top:280px;
+	z-index:30;
+	background-image: url("../img/tutorial_btn_direita.png");
+	background-repeat: repeat;
+	background-size:cover;
+	background-position: center center;	
+	cursor:pointer;
+}
+#tutorial_btn_esquerda{
+	position:absolute;
+	width:99px;
+	height:110px;
+	left:-10px;
+	top:280px;
+	z-index:30;
+	background-image: url("../img/tutorial_btn_esquerda.png");
+	background-repeat: repeat;
+	background-size:cover;
+	background-position: center center;	
+	cursor:pointer;
+}
+#tutorial_btn_comecar{
+	position:absolute;
+	width:139px;
+	height:110px;
+	right:0px;
+	top:280px;
+	z-index:31;
+	background-image: url("../img/tutorial_btn_comecar.png");
+	background-repeat: repeat;
+	background-size:cover;
+	background-position: center center;	
+	cursor:pointer;
+	font-family:'HighlanderStd-Medium', sans-serif;
+	font-size:25px;
+	text-align:left;
+	text-indent:17px;
+	color:#ffffff;
+	font-weight:normal;
+	line-height:106px;
+	text-shadow:2px 2px 4px #000000;	
+	display:none;
+}
+#tutorial_painel_passo_1, #tutorial_painel_passo_2, #tutorial_painel_passo_3{
+	font-family:'HighlanderStd-Medium', sans-serif;
+	font-size:30px;
+	text-align:center;
+	color:#ffffff;
+	font-weight:normal;
+	line-height:65px;
+	text-shadow:2px 2px 4px #000000;
+	display:none;
+}
+
+#tutorial_painel_passo_1{
+	position:absolute;
+	width:331px;
+	height:219px;
+	left:95px;
+	top:87px;
+	z-index:20;
+	background-image: url("../img/tutorial_painel_passo_1.png");
+	background-repeat: repeat;
+	background-size:cover;
+	background-position: center center;	
+}
+#tutorial_painel_passo_2{
+	position:absolute;
+	width:329px;
+	height:244px;
+	right:261px;
+	bottom:117px;
+	z-index:20;
+	background-image: url("../img/tutorial_painel_passo_2.png");
+	background-repeat: repeat;
+	background-size:cover;
+	background-position: center center;	
+}
+#tutorial_painel_passo_3{
+	position:absolute;
+	width:371px;
+	height:233px;
+	left:124px;
+	bottom:46px;
+	z-index:20;
+	background-image: url("../img/tutorial_painel_passo_3.png");
+	background-repeat: repeat;
+	background-size:cover;
+	background-position: center center;
+	text-indent:36px;
+}
+#tutorial_painel_texto_1, #tutorial_painel_texto_2, #tutorial_painel_texto_3{
+	position:absolute;
+	width:270px;
+    font-family:'CronosPro-Regular', sans-serif;
+	font-size:25px;
+	text-align:center;
+	color:#000000;
+	font-weight:normal;
+	line-height:120%;
+	text-shadow:none;	
+}
+#tutorial_painel_texto_1{
+	left:30px;
+	top:83px;
+}
+#tutorial_painel_texto_2{
+	left:30px;
+	top:76px;
+}
+#tutorial_painel_texto_3{
+	left:29px;
+    font-size:24px;
+    top:87px;
+    width:323px;
+}
+/* Jogo para Larissa */
+#jogo_larissa_area{
+	position:fixed;
+	width:1025px;
+	height:661px;
+	left:0px;
+	top:0px;
+	z-index:7;
+	display:none;
+	/* */
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;	
+}
+#jogo_larissa_fundo{
+	position:fixed;
+	width:1025px;
+	height:661px;
+	left:-1px;
+	top:-1px;
+	z-index:1;
+	background-image: url("../img/jogo_larissa_fundo.png");
+	background-repeat: repeat;
+	background-size:cover;
+	background-position: center center;
+}
+#jogo_larissa_cenario{
+	position:absolute;
+	width:1025px;
+	height:661px;
+	left:-1px;
+	top:-1px;
+	z-index:4;
+	background-image: url("../img/jogo_larissa_cenario.png");
+	background-repeat: repeat;
+	background-size:cover;
+	background-position: center center;
+}
+#jogo_larissa_personagem{
+	position:absolute;
+	width:120px;
+	height:322px;
+	left:203px;
+	bottom:28px;
+	z-index:21;
+	background-image: url("../img/jogo_larissa_personagem.png");
+	background-repeat: repeat;
+	background-size:cover;
+	background-position: center center;
+}
+#jogo_larissa_caixa_creche{
+	position:absolute;
+	width:265px;
+	height:132px;
+	left:340px;
+	bottom:-24px;
+	z-index:7;
+	background-image: url("../img/jogo_larissa_caixa.png");
+	background-repeat: repeat;
+	background-size:cover;
+	background-position: center center;
+}
+#jogo_larissa_frente_creche {
+    position: absolute;
+    width: 265px;
+    height: 160px;
+    left: 340px;
+    bottom: 0px;
+    z-index: 800;
+    background-image: url("../img/jogo_larissa_frente_creche.png");
+    background-repeat: no-repeat;
+    background-size: 265px 132px;
+    background-position: 0px 53px;
+}
+#jogo_larissa_frente_orfanato{
+    position: absolute;
+    width: 265px;
+    height: 160px;
+    left: 605px;
+    bottom: 0px;
+    z-index: 800;
+    background-image: url("../img/jogo_larissa_frente_orfanato.png");
+    background-repeat: no-repeat;
+    background-size: 265px 132px;
+    background-position: 0px 53px;
+}
+#jogo_larissa_caixa_orfanato{
+	position:absolute;
+	width:265px;
+	height:132px;
+	left:605px;
+	bottom:-24px;
+	z-index:8;
+	background-image: url("../img/jogo_larissa_caixa.png");
+	background-repeat: repeat;
+	background-size:cover;
+	background-position: center center;
+}
+#jogo_larissa_fracao_caixa_creche, #jogo_larissa_fracao_caixa_orfanato{
+	position:absolute;
+    /*width:320px;
+    height:197px;*/
+    left:214px;
+    top:83px;
+    font-family:'HighlanderStd-Medium', sans-serif;
+	text-shadow:1px 1px 1px #2B1817;
+    font-size:28px;
+    text-align:center;
+    color:#6B4C38;
+    font-weight:normal;
+    line-height:38px;
+	/**/
+	transform: skew(2deg, -12deg) ;
+	-webkit-transform: skew(2deg, -12deg);
+	-moz-transform: skew(2deg, -12deg);
+	-o-transform: skew(2deg, -12deg);
+	-ms-transform: skew(2deg, -12deg);	
+}
+#jogo_larissa_frente_creche{
+    position: absolute;
+    width: 265px;
+    height: 160px;
+    left: 340px;
+    bottom: 0px;
+    z-index: 800;
+    background-image: url("../img/jogo_larissa_frente_creche.png");
+    background-repeat: no-repeat;
+    background-size: 265px 132px;
+    background-position: 0px 53px;
+}
+#jogo_larissa_objeto_1, #jogo_larissa_objeto_2, #jogo_larissa_objeto_3, #jogo_larissa_objeto_4{
+	position:fixed;
+	z-index:10;
+	background-image: url("../img/desafio_larissa_item_1.png");
+	background-repeat: repeat;
+	background-size:cover;
+	background-position: center center;
+	cursor:move;
+}
+#jogo_larissa_objeto_5, #jogo_larissa_objeto_6, #jogo_larissa_objeto_7, #jogo_larissa_objeto_8, #jogo_larissa_objeto_9{
+	position:fixed;
+	z-index:10;
+	background-image: url("../img/desafio_larissa_item_2.png");
+	background-repeat: repeat;
+	background-size:cover;
+	background-position: center center;
+	cursor:move;
+}
+#jogo_larissa_objeto_1{
+	width:134px;
+	height:115px;
+	right:60px;
+	top:214px;
+}
+#jogo_larissa_objeto_2{
+	width:86px;
+	height:81px;
+	left:666px;
+	top:70px;
+}
+#jogo_larissa_objeto_3{
+	width:112px;
+	height:105px;
+	left:165px;
+	top:145px;
+}
+#jogo_larissa_objeto_4{
+	width:84px;
+	height:56px;
+	left:390px;
+	top:288px;
+	z-index:10;
+	background-image: url("../img/jogo_larissa_objeto_4.png");	
+}
+#jogo_larissa_objeto_5{
+	width:105px;
+	height:68px;
+	left:417px;
+	top:181px;
+}
+#jogo_larissa_objeto_6{
+	width:132px;
+	height:89px;
+	left:140px;
+	top:260px;
+	z-index:5;
+}
+#jogo_larissa_objeto_7{
+	width:69px;
+	height:44px;
+	left:541px;
+	top:267px;
+	background-image: url("../img/jogo_larissa_objeto_7.png");	
+}
+#jogo_larissa_objeto_8{
+	width:89px;
+	height:33px;
+	left:600px;
+	top:438px;
+	background-image: url("../img/jogo_larissa_objeto_8.png");	
+}
+#jogo_larissa_objeto_9{
+	width:184px;
+	height:118px;
+	left:903px;
+	top:393px;
+}
+#jogo_larissa_btn_lista{
+	position:absolute;
+	width:150px;
+	height:67px;
+	right:11px;
+	top:11px;
+	z-index:12;
+	background-image: url("../img/jogo_btn_lista.png");
+	background-repeat: repeat;
+	background-size:cover;
+	background-position: center center;
+	cursor:pointer
+}
+#jogo_larissa_rotulo_lista{
+	position:absolute;
+    width:72px;
+    height:40px;
+    left:69px;
+    top:13px;
+    font-family:'HighlanderStd-Medium', sans-serif;
+    font-size:15px;
+    text-align:left;
+    color:#6B2118;
+    font-weight:normal;
+    line-height:124%;
+}
+#jogo_larissa_painel_lista{
+	position:absolute;
+	width:316px;
+	height:262px;
+	right:4px;
+	top:6px;
+	z-index:122;
+	background-image: url("../img/desafio_painel_lista.png");
+	background-repeat: repeat;
+	background-size:cover;
+	background-position: center center;
+}
+#jogo_larissa_titulo{
+	position:absolute;
+	width:100%;
+	top:16px;
+	left:0px;
+	z-index:2;
+	font-family:'HighlanderStd-Medium', sans-serif;
+	font-size:26px;
+	text-align:center;
+	color:#ffffff;
+	font-weight:normal;
+	text-shadow:2px 2px 5px #000000;
+}
+#jogo_larissa_lista_item_1, #jogo_larissa_lista_item_2{
+	position:absolute;
+	width:112px;
+	height:112px;
+	top:78px;
+	z-index:1;
+	border-radius: 1000px;
+	font-family:'HighlanderStd-Medium', sans-serif;
+	font-size:24px;
+	text-align:center;
+	color:#000000;
+	font-weight:normal;
+	line-height:292px;
+	background-repeat: repeat;
+	background-size:cover;
+	background-position: center center;	
+
+}
+#jogo_larissa_lista_item_1{
+	background-image: url("../img/desafio_larissa_item_1.png");
+	left:27px;
+}
+#jogo_larissa_lista_item_2{
+	background-image: url("../img/desafio_larissa_item_2.png");
+	right:27px;
+	
+}
+#jogo_larissa_painel_btn_fechar{
+	position:absolute;
+	width:160px;
+	height:100px;
+	right:81px;
+	top:210px;
+	z-index:121;
+	background-image: url("../img/jogo_painel_btn_fechar.png");
+	background-repeat: repeat;
+	background-size:cover;
+	background-position: center center;
+    font-family:'HighlanderStd-Medium', sans-serif;
+    font-size:22px;
+	text-shadow:2px 2px 5px #000000;
+    text-align:left;
+	text-indent:72px;
+    color:#ffffff;
+    font-weight:normal;
+    line-height:138px;
+	cursor:pointer;
+	display:none;
+}
+#jogo_larissa_sombra_painel{
+	position:absolute;
+	width:1025px;
+	height:661px;
+	left:-1px;
+	top:-1px;
+	z-index:120;
+	display:inherit;
+	background-color: rgba(0, 0, 0, 0.6);
+	background: rgba(0, 0, 0, 0.6);
+	-webkit-filter:blur(10px);
+	filter:blur(10px)
+}
+#jogo_larissa_btn_confirmar{
+	position:absolute;
+	width:129px;
+	height:130px;
+	left:4px;
+	bottom:4px;
+	z-index:10;
+	background-image: url("../img/jogo_btn_confirmar.png");
+	background-repeat: repeat;
+	background-size:cover;
+	background-position: center center;
+    font-family:'CronosPro-Regular', sans-serif;
+    font-size:16px;
+	text-shadow:2px 2px 5px #000000;
+    text-align:center;
+	text-indent:-4px;
+    color:#ffffff;
+    font-weight:normal;
+    line-height:166px;
+	cursor:pointer;
+}
+#jogo_larissa_btn_refazer, #jogo_pedro_btn_refazer, #jogo_barbara_btn_refazer{
+    position:absolute;
+    width:100px;
+    height:100px;
+    left:114px;
+    bottom:10px;
+    z-index:8;
+    background-image:url("../img/jogo_btn_refazer.png");
+    background-repeat:repeat;
+    background-size:cover;
+    background-position:center center;
+    font-family:'CronosPro-Regular', sans-serif;
+    font-size:14px;
+    text-shadow:2px 2px 5px #000000;
+    text-align:center;
+    text-indent:-4px;
+    color:#ffffff;
+    font-weight:normal;
+    line-height:130px;
+    cursor:pointer;
+}
+/* Jogo para Pedro */
+#jogo_pedro_area{
+	position:fixed;
+	width:1025px;
+	height:661px;
+	left:0px;
+	top:0px;
+	z-index:6;
+	display:none;
+	/* */
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;	
+}
+#jogo_pedro_fundo{
+	position:fixed;
+	width:1025px;
+	height:661px;
+	left:-1px;
+	top:-1px;
+	z-index:1;
+	background-image: url("../img/jogo_pedro_fundo.jpg");
+	background-repeat: repeat;
+	background-size:cover;
+	background-position: center center;
+}
+#jogo_pedro_cobertura_carpete{
+	position:fixed;
+	width:670px;
+	height:43px;
+	left:273px;
+	top:617px;
+	z-index:501;
+	background-image: url("../img/jogo_pedro_cobertura_carpete.png");
+	background-repeat: repeat;
+	background-size:cover;
+	background-position: center center;
+}
+#jogo_pedro_cenario{
+	position:absolute;
+	width:752px;
+	height:551px;
+	left:216px;
+	top:40px;
+	z-index:4;
+	background-image: url("../img/jogo_pedro_cenario.png");
+	background-repeat: repeat;
+	background-size:cover;
+	background-position: center center;
+}
+#jogo_pedro_personagem{
+	position:absolute;
+	width:122px;
+	height:417px;
+	left:114px;
+	bottom:5px;
+	z-index:5;
+	background-image: url("../img/jogo_pedro_personagem.png");
+	background-repeat: repeat;
+	background-size:cover;
+	background-position: center center;
+}
+#jogo_pedro_caixa_creche{
+    position:absolute;
+    width:228px;
+    height:161px;
+    left:294px;
+	top:500px;
+	z-index:7;
+	background-image: url("../img/jogo_pedro_caixa.png");
+	background-repeat: repeat;
+	background-size:cover;
+	background-position: center center;
+}
+#jogo_pedro_frente_creche{
+    position: absolute;
+    width: 228px;
+    height: 205px;
+    left: 294px;
+    top: 456px;
+    z-index: 800;
+    background-image: url("../img/jogo_pedro_frente_creche.png");
+    background-repeat: no-repeat;
+    background-size: 228px 161px;
+    background-position: 0px 45px;
+}
+#jogo_pedro_frente_orfanato{
+    position: absolute;
+    width: 228px;
+    height: 205px;
+    left: 504px;
+    top: 456px;
+    z-index: 801;
+    background-image: url("../img/jogo_pedro_frente_orfanato.png");
+    background-repeat: no-repeat;
+    background-size: 228px 161px;
+    background-position: 0px 45px;
+}
+#jogo_pedro_caixa_orfanato{
+	position:absolute;
+	width:228px;
+	height:161px;
+    left:504px;
+    top:500px;
+	z-index:8;
+	background-image: url("../img/jogo_pedro_caixa.png");
+	background-repeat: repeat;
+	background-size:cover;
+	background-position: center center;
+}
+#jogo_pedro_caixa_asilo{
+	position:absolute;
+	width:228px;
+	height:161px;
+    right:83px;
+    top:500px;
+	z-index:7;
+	background-image: url("../img/jogo_pedro_caixa.png");
+	background-repeat: repeat;
+	background-size:cover;
+	background-position: center center;
+}
+#jogo_pedro_frente_asilo{
+    position: absolute;
+    width: 228px;
+    height: 205px;
+    right: 83px;
+    top: 456px;
+    z-index: 900;
+    background-image: url("../img/jogo_pedro_frente_asilo.png");
+    background-repeat: no-repeat;
+    background-size: 228px 161px;
+    background-position: 0px 45px;
+}
+#jogo_pedro_fracao_caixa_creche, #jogo_pedro_fracao_caixa_orfanato, #jogo_pedro_fracao_caixa_asilo{
+	position:absolute;
+    /*width:320px;
+    height:197px;*/
+    left:171px;
+    top:83px;
+    font-family:'HighlanderStd-Medium', sans-serif;
+	text-shadow:1px 1px 1px #2B1817;
+    font-size:28px;
+    text-align:center;
+    color:#6B4C38;
+    font-weight:normal;
+    line-height:38px;
+	/**/
+	transform: skew(2deg, -12deg) ;
+	-webkit-transform: skew(2deg, -12deg);
+	-moz-transform: skew(2deg, -12deg);
+	-o-transform: skew(2deg, -12deg);
+	-ms-transform: skew(2deg, -12deg);	
+}
+
+#jogo_pedro_objeto_1, #jogo_pedro_objeto_2, #jogo_pedro_objeto_3, #jogo_pedro_objeto_4, #jogo_pedro_objeto_5, #jogo_pedro_objeto_6, #jogo_pedro_objeto_7, #jogo_pedro_objeto_8, #jogo_pedro_objeto_9, #jogo_pedro_objeto_10, #jogo_pedro_objeto_11, #jogo_pedro_objeto_12{
+	position:fixed;
+	z-index:10;
+	background-repeat: repeat;
+	background-size:cover;
+	background-position: center center;
+	cursor:move;
+}
+
+#jogo_pedro_objeto_1{
+	width:108px;
+	height:159px;
+	left:507px;
+	top:127px;
+	background-image: url("../img/jogo_pedro_objeto_1.png");
+	z-index:15;	
+}
+#jogo_pedro_objeto_2{
+	width:108px;
+	height:159px;
+	left:578px;
+	top:127px;
+	background-image: url("../img/jogo_pedro_objeto_2.png");
+	z-index:14;
+}
+#jogo_pedro_objeto_3{
+	width:108px;
+	height:159px;
+	left:639px;
+	top:126px;
+	background-image: url("../img/jogo_pedro_objeto_3.png");
+	z-index:13;	
+}
+#jogo_pedro_objeto_4{
+	width:108px;
+	height:159px;
+	left:704px;
+	top:124px;
+	background-image: url("../img/jogo_pedro_objeto_4.png");
+	z-index:12;
+}
+#jogo_pedro_objeto_5{
+	width:108px;
+	height:158px;
+	left:763px;
+	top:123px;
+	background-image: url("../img/jogo_pedro_objeto_5.png");
+	z-index:11;
+}
+#jogo_pedro_objeto_6{
+	width:108px;
+	height:158px;
+	left:831px;
+	top:122px;
+	background-image: url("../img/jogo_pedro_objeto_6.png");
+	z-index:10;	
+}
+#jogo_pedro_objeto_7{
+	width:134px;
+	height:60px;
+	left:307px;
+	top:133px;
+	background-image: url("../img/jogo_pedro_objeto_7.png");
+	z-index:11;		
+}
+#jogo_pedro_objeto_8{
+	width:133px;
+	height:60px;
+	left:309px;
+	top:159px;
+	background-image: url("../img/jogo_pedro_objeto_8.png");
+}
+#jogo_pedro_objeto_9{
+	width:134px;
+	height:59px;
+	left:317px;
+	top:260px;
+	background-image: url("../img/jogo_pedro_objeto_9.png");
+	z-index:11;		
+}
+#jogo_pedro_objeto_10{
+	width:133px;
+	height:60px;
+	left:308px;
+	top:284px;
+	background-image: url("../img/jogo_pedro_objeto_10.png");	
+}
+#jogo_pedro_objeto_11{
+	width:134px;
+	height:59px;
+	left:307px;
+	top:382px;
+	background-image: url("../img/jogo_pedro_objeto_11.png");
+	z-index:11;		
+}
+#jogo_pedro_objeto_12{
+	width:134px;
+	height:60px;
+	left:311px;
+	top:406px;
+	background-image: url("../img/jogo_pedro_objeto_12.png");	
+}
+/**/
+#jogo_pedro_btn_lista{
+	position:absolute;
+	width:150px;
+	height:67px;
+	left:11px;
+	top:11px;
+	z-index:12;
+	background-image: url("../img/jogo_btn_lista.png");
+	background-repeat: repeat;
+	background-size:cover;
+	background-position: center center;
+	cursor:pointer
+}
+#jogo_pedro_rotulo_lista{
+	position:absolute;
+    width:72px;
+    height:40px;
+    left:69px;
+    top:13px;
+    font-family:'HighlanderStd-Medium', sans-serif;
+    font-size:15px;
+    text-align:left;
+    color:#6B2118;
+    font-weight:normal;
+    line-height:124%;
+}
+#jogo_pedro_painel_lista{
+	position:absolute;
+	width:316px;
+	height:262px;
+	left:4px;
+	top:6px;
+	z-index:122;
+	background-image: url("../img/desafio_painel_lista.png");
+	background-repeat: repeat;
+	background-size:cover;
+	background-position: center center;
+}
+#jogo_pedro_titulo{
+	position:absolute;
+	width:100%;
+	top:16px;
+	left:0px;
+	z-index:2;
+	font-family:'HighlanderStd-Medium', sans-serif;
+	font-size:26px;
+	text-align:center;
+	color:#ffffff;
+	font-weight:normal;
+	text-shadow:2px 2px 5px #000000;
+}
+#jogo_pedro_lista_item_1, #jogo_pedro_lista_item_2{
+	position:absolute;
+	width:112px;
+	height:112px;
+	top:78px;
+	z-index:1;
+	border-radius: 1000px;
+	font-family:'HighlanderStd-Medium', sans-serif;
+	font-size:24px;
+	text-align:center;
+	color:#000000;
+	font-weight:normal;
+	line-height:292px;
+	background-repeat: repeat;
+	background-size:cover;
+	background-position: center center;	
+
+}
+#jogo_pedro_lista_item_1{
+	background-image: url("../img/desafio_pedro_item_1.png");
+	left:27px;
+}
+#jogo_pedro_lista_item_2{
+	background-image: url("../img/desafio_pedro_item_2.png");
+	right:27px;
+	
+}
+#jogo_pedro_painel_btn_fechar{
+	position:absolute;
+	width:160px;
+	height:100px;
+	left:81px;
+	top:210px;
+	z-index:121;
+	background-image: url("../img/jogo_painel_btn_fechar.png");
+	background-repeat: repeat;
+	background-size:cover;
+	background-position: center center;
+    font-family:'HighlanderStd-Medium', sans-serif;
+    font-size:22px;
+	text-shadow:2px 2px 5px #000000;
+    text-align:left;
+	text-indent:72px;
+    color:#ffffff;
+    font-weight:normal;
+    line-height:138px;
+	cursor:pointer;
+	display:none;
+}
+#jogo_pedro_sombra_painel{
+	position:absolute;
+	width:1025px;
+	height:661px;
+	left:-1px;
+	top:-1px;
+	z-index:120;
+	display:inherit;
+	background-color: rgba(0, 0, 0, 0.6);
+	background: rgba(0, 0, 0, 0.6);
+	-webkit-filter:blur(10px);
+	filter:blur(10px)
+}
+#jogo_pedro_btn_confirmar{
+	position:absolute;
+	width:129px;
+	height:130px;
+	left:4px;
+	bottom:4px;
+	z-index:10;
+	background-image: url("../img/jogo_btn_confirmar.png");
+	background-repeat: repeat;
+	background-size:cover;
+	background-position: center center;
+    font-family:'CronosPro-Regular', sans-serif;
+    font-size:16px;
+	text-shadow:2px 2px 5px #000000;
+    text-align:center;
+	text-indent:-4px;
+    color:#ffffff;
+    font-weight:normal;
+    line-height:166px;
+	cursor:pointer;
+}
+/* Jogo para Bárbara */
+#jogo_barbara_area{
+	position:fixed;
+	width:1025px;
+	height:661px;
+	left:0px;
+	top:0px;
+	z-index:5;
+	display:none;
+	/* */
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;	
+}
+#jogo_barbara_fundo{
+	position:fixed;
+	width:1025px;
+	height:661px;
+	left:-1px;
+	top:-1px;
+	z-index:1;
+	background-image: url("../img/jogo_barbara_fundo.jpg");
+	background-repeat: repeat;
+	background-size:cover;
+	background-position: center center;
+}
+#jogo_barbara_cenario{
+	position:absolute;
+	width:969px;
+	height:440px;
+	left:21px;
+	bottom:0px;
+	z-index:4;
+	background-image: url("../img/jogo_barbara_cenario.png");
+	background-repeat: repeat;
+	background-size:cover;
+	background-position: center center;
+}
+#jogo_barbara_personagem{
+	position:absolute;
+	width:154px;
+	height:443px;
+	left:70px;
+	bottom:13px;
+	z-index:5;
+	background-image: url("../img/jogo_barbara_personagem.png");
+	background-repeat: repeat;
+	background-size:cover;
+	background-position: center center;
+}
+#jogo_barbara_caixa_creche{
+	position:absolute;
+	width:174px;
+	height:132px;
+	left:233px;
+	bottom:-21px;
+	z-index:7;
+	background-image: url("../img/jogo_barbara_caixa.png");
+	background-repeat: repeat;
+	background-size:cover;
+	background-position: center center;
+}
+#jogo_barbara_frente_creche{
+	position: absolute;
+    width: 174px;
+    height: 160px;
+    left: 233px;
+    bottom: -20px;
+    z-index: 700;
+    background-image: url("../img/jogo_barbara_frente_creche.png");
+    background-repeat: no-repeat;
+    background-size: 174px 127px;
+    background-position: 0px 30px;
+}
+#jogo_barbara_caixa_orfanato{
+	position:absolute;
+	width:174px;
+	height:132px;
+	left:409px;
+	bottom:-21px;
+	z-index:7;
+	background-image: url("../img/jogo_barbara_caixa.png");
+	background-repeat: repeat;
+	background-size:cover;
+	background-position: center center;
+}
+#jogo_barbara_frente_orfanato{
+    position: absolute;
+    width: 174px;
+    height: 160px;
+    left: 409px;
+    bottom: -20px;
+    z-index: 700;
+    background-image: url("../img/jogo_barbara_frente_orfanato.png");
+    background-repeat: no-repeat;
+    background-size: 174px 127px;
+    background-position: 0px 30px;
+}
+#jogo_barbara_caixa_asilo{
+	position:absolute;
+	width:174px;
+	height:132px;
+	left:585px;
+	bottom:-21px;
+	z-index:7;
+	background-image: url("../img/jogo_barbara_caixa.png");
+	background-repeat: repeat;
+	background-size:cover;
+	background-position: center center;
+}
+#jogo_barbara_frente_asilo{
+    position: absolute;
+    width: 174px;
+    height: 160px;
+    left: 585px;
+    bottom: -20px;
+    z-index: 700;
+    background-image: url("../img/jogo_barbara_frente_asilo.png");
+    background-repeat: no-repeat;
+    background-size: 174px 127px;
+    background-position: 0px 30px;
+}
+#jogo_barbara_caixa_cidade{
+	position:absolute;
+	width:174px;
+	height:132px;
+	left:761px;
+	bottom:-21px;
+	z-index:7;
+	background-image: url("../img/jogo_barbara_caixa.png");
+	background-repeat: repeat;
+	background-size:cover;
+	background-position: center center;
+}
+#jogo_barbara_frente_cidade{
+    position: absolute;
+    width: 174px;
+    height: 160px;
+    left: 761px;
+    bottom: -20px;
+    z-index: 700;
+    background-image: url("../img/jogo_barbara_frente_cidade.png");
+    background-repeat: no-repeat;
+    background-size: 174px 127px;
+    background-position: 0px 30px;
+}
+#jogo_barbara_fracao_caixa_creche, #jogo_barbara_fracao_caixa_orfanato, #jogo_barbara_fracao_caixa_asilo, #jogo_barbara_fracao_caixa_cidade{
+	position:absolute;
+    /*width:320px;
+    height:197px;*/
+    left:131px;
+    top:57px;
+    font-family:'HighlanderStd-Medium', sans-serif;
+	text-shadow:1px 1px 1px #2B1817;
+    font-size:28px;
+    text-align:center;
+    color:#6B4C38;
+    font-weight:normal;
+    line-height:38px;
+	/**/
+	transform: skew(2deg, -12deg) ;
+	-webkit-transform: skew(2deg, -12deg);
+	-moz-transform: skew(2deg, -12deg);
+	-o-transform: skew(2deg, -12deg);
+	-ms-transform: skew(2deg, -12deg);	
+}
+
+#jogo_barbara_objeto_1, #jogo_barbara_objeto_2, #jogo_barbara_objeto_3, #jogo_barbara_objeto_4, #jogo_barbara_objeto_5, #jogo_barbara_objeto_6, #jogo_barbara_objeto_7{
+	position:fixed;
+	z-index:10;
+	background-repeat: repeat;
+	background-size:cover;
+	background-position: center center;
+	background-image: url("../img/desafio_barbara_item_1.png");
+	cursor:move;
+}
+
+#jogo_barbara_objeto_8, #jogo_barbara_objeto_9, #jogo_barbara_objeto_10, #jogo_barbara_objeto_11, #jogo_barbara_objeto_12, #jogo_barbara_objeto_13, #jogo_barbara_objeto_14, #jogo_barbara_objeto_15{
+	position:fixed;
+	z-index:10;
+	background-repeat: repeat;
+	background-size:cover;
+	background-position: center center;
+	background-image: url("../img/desafio_barbara_item_2.png");
+	cursor:move;
+}
+
+#jogo_barbara_objeto_1{
+	width:94px;
+	height:106px;
+	left:191px;
+	top:49px;
+}
+#jogo_barbara_objeto_2{
+	width:90px;
+	height:101px;
+	left:225px;
+	top:372px;
+}
+#jogo_barbara_objeto_3{
+	width:109px;
+	height:101px;
+	left:443px;
+	top:147px;
+	transform: rotate(303deg) ;
+	-webkit-transform: rotate(303deg) ;
+	-moz-transform: rotate(303deg) ;
+	-o-transform: rotate(303deg) ;
+	-ms-transform: rotate(303deg) ;	
+}
+#jogo_barbara_objeto_4{
+	width:65px;
+	height:57px;
+	left:589px;
+	top:185px;
+	background-image: url("../img/desafio_barbara_item_4.png");	
+}
+#jogo_barbara_objeto_5{
+	width:108px;
+	height:113px;
+	left:693px;
+	top:270px;
+	transform: rotate(325deg) ;
+	-webkit-transform: rotate(325deg) ;
+	-moz-transform: rotate(325deg) ;
+	-o-transform: rotate(325deg) ;
+	-ms-transform: rotate(325deg) ;		
+}
+#jogo_barbara_objeto_6{
+	width:104px;
+	height:111px;
+	left:882px;
+	top:135px;
+	transform: rotate(349deg) ;
+	-webkit-transform: rotate(349deg) ;
+	-moz-transform: rotate(349deg) ;
+	-o-transform: rotate(349deg) ;
+	-ms-transform: rotate(349deg) ;	
+}
+#jogo_barbara_objeto_7{
+	width:85px;
+	height:66px;
+	right:28px;
+	bottom:119px;
+	background-image: url("../img/desafio_barbara_item_7.png");	
+}
+/*---*/
+#jogo_barbara_objeto_8{
+	width:61px;
+	height:79px;
+	left:218px;
+	top:204px;
+}
+#jogo_barbara_objeto_9{
+	width:64px;
+	height:72px;
+	left:390px;
+	top:169px;
+}
+#jogo_barbara_objeto_10{
+	width:76px;
+	height:86px;
+	left:535px;
+	top:247px;
+	z-index:11;
+}
+#jogo_barbara_objeto_11{
+	width:76px;
+	height:86px;
+	left:582px;
+	top:247px;
+	z-index:11;
+}
+#jogo_barbara_objeto_12{
+	width:76px;
+	height:86px;
+	left:510px;
+	top:302px;
+}
+#jogo_barbara_objeto_13{
+	width:76px;
+	height:86px;
+	left:557px;
+	top:302px;
+}
+#jogo_barbara_objeto_14{
+	width:76px;
+	height:86px;
+	left:601px;
+	top:302px;
+}
+#jogo_barbara_objeto_15{
+	width:65px;
+	height:78px;
+	right:-7px;
+	top:176px;
+}
+
+
+
+/**/
+#jogo_barbara_btn_lista{
+	position:absolute;
+	width:150px;
+	height:67px;
+	right:11px;
+	top:11px;
+	z-index:12;
+	background-image: url("../img/jogo_btn_lista.png");
+	background-repeat: repeat;
+	background-size:cover;
+	background-position: center center;
+	cursor:pointer
+}
+#jogo_barbara_rotulo_lista{
+	position:absolute;
+    width:72px;
+    height:40px;
+    left:69px;
+    top:13px;
+    font-family:'HighlanderStd-Medium', sans-serif;
+    font-size:15px;
+    text-align:left;
+    color:#6B2118;
+    font-weight:normal;
+    line-height:124%;
+}
+#jogo_barbara_painel_lista{
+	position:absolute;
+	width:316px;
+	height:262px;
+	right:4px;
+	top:6px;
+	z-index:122;
+	background-image: url("../img/desafio_painel_lista.png");
+	background-repeat: repeat;
+	background-size:cover;
+	background-position: center center;
+}
+#jogo_barbara_titulo{
+	position:absolute;
+	width:100%;
+	top:16px;
+	left:0px;
+	z-index:2;
+	font-family:'HighlanderStd-Medium', sans-serif;
+	font-size:26px;
+	text-align:center;
+	color:#ffffff;
+	font-weight:normal;
+	text-shadow:2px 2px 5px #000000;
+}
+#jogo_barbara_lista_item_1, #jogo_barbara_lista_item_2{
+	position:absolute;
+	width:112px;
+	height:112px;
+	top:78px;
+	z-index:1;
+	border-radius: 1000px;
+	font-family:'HighlanderStd-Medium', sans-serif;
+	font-size:24px;
+	text-align:center;
+	color:#000000;
+	font-weight:normal;
+	line-height:292px;
+	background-repeat: repeat;
+	background-size:cover;
+	background-position: center center;	
+
+}
+#jogo_barbara_lista_item_1{
+	background-image: url("../img/desafio_barbara_item_1.png");
+	left:27px;
+}
+#jogo_barbara_lista_item_2{
+	background-image: url("../img/desafio_barbara_item_2.png");
+	right:27px;
+	
+}
+#jogo_barbara_painel_btn_fechar{
+	position:absolute;
+	width:160px;
+	height:100px;
+	right:81px;
+	top:210px;
+	z-index:121;
+	background-image: url("../img/jogo_painel_btn_fechar.png");
+	background-repeat: repeat;
+	background-size:cover;
+	background-position: center center;
+    font-family:'HighlanderStd-Medium', sans-serif;
+    font-size:22px;
+	text-shadow:2px 2px 5px #000000;
+    text-align:left;
+	text-indent:72px;
+    color:#ffffff;
+    font-weight:normal;
+    line-height:138px;
+	cursor:pointer;
+	display:none;
+}
+#jogo_barbara_sombra_painel{
+	position:absolute;
+	width:1025px;
+	height:661px;
+	left:-1px;
+	top:-1px;
+	z-index:120;
+	display:inherit;
+	background-color: rgba(0, 0, 0, 0.6);
+	background: rgba(0, 0, 0, 0.6);
+	-webkit-filter:blur(10px);
+	filter:blur(10px)
+}
+#jogo_barbara_btn_confirmar{
+	position:absolute;
+	width:129px;
+	height:130px;
+	left:4px;
+	bottom:4px;
+	z-index:10;
+	background-image: url("../img/jogo_btn_confirmar.png");
+	background-repeat: repeat;
+	background-size:cover;
+	background-position: center center;
+    font-family:'CronosPro-Regular', sans-serif;
+    font-size:16px;
+	text-shadow:2px 2px 5px #000000;
+    text-align:center;
+	text-indent:-4px;
+    color:#ffffff;
+    font-weight:normal;
+    line-height:166px;
+	cursor:pointer;
+}
+/* Conclusão Larissa */
+#conclusao_larissa_area{
+	position:absolute;
+	width:1025px;
+	height:661px;
+	left:-1px;
+	top:-1px;
+	z-index:403;
+	display:none;
+}
+#conclusao_larissa_fundo{
+	position:fixed;
+	width:1025px;
+	height:661px;
+	left:-1px;
+	top:-1px;
+	z-index:1;
+	background-image: url("../img/conclusao_larissa_fundo.jpg");
+	background-repeat: repeat;
+	background-size:cover;
+	background-position: center center;
+}
+#conclusao_larissa_personagens{
+	position:fixed;
+	width:1025px;
+	height:661px;
+	left:-1px;
+	top:-1px;
+	z-index:3;
+	background-image: url("../img/conclusao_larissa_personagens.png");
+	background-repeat: repeat;
+	background-size:cover;
+	background-position: center center;
+}
+#conclusao_larissa_texto{
+	position:fixed;
+	width:1025px;
+	height:661px;
+	left:-1px;
+	top:-1px;
+	z-index:4;
+	background-image: url("../img/conclusao_larissa_texto.png");
+	background-repeat: repeat;
+	background-size:cover;
+	background-position: center center;
+}
+#conclusao_larissa_solo{
+	position:fixed;
+	width:1025px;
+	height:661px;
+	left:-1px;
+	top:-1px;
+	z-index:2;
+	background-image: url("../img/conclusao_larissa_solo.png");
+	background-repeat: repeat;
+	background-size:cover;
+	background-position: center center;
+}
+/* Conclusão Pedro */
+#conclusao_pedro_area{
+	position:absolute;
+	width:1025px;
+	height:661px;
+	left:-1px;
+	top:-1px;
+	z-index:402;
+	display:none;
+}
+#conclusao_pedro_fundo{
+	position:absolute;
+	width:1025px;
+	height:661px;
+	left:-1px;
+	top:-1px;
+	z-index:1;
+	background-image: url("../img/conclusao_pedro_fundo.jpg");
+	background-repeat: repeat;
+	background-size:cover;
+	background-position: center center;
+}
+#conclusao_pedro_solo{
+	position:absolute;
+	width:1025px;
+	height:206px;
+	left:-1px;
+	bottom:-1px;
+	z-index:2;
+	background-image: url("../img/conclusao_pedro_solo.png");
+	background-repeat: repeat;
+	background-size:cover;
+	background-position: center center;
+}
+#conclusao_pedro_personagens{
+	position:absolute;
+	width:1025px;
+	height:661px;
+	left:-1px;
+	top:-1px;
+	z-index:3;
+	background-image: url("../img/conclusao_pedro_personagens.png");
+	background-repeat: repeat;
+	background-size:cover;
+	background-position: center center;
+}
+#conclusao_pedro_texto{
+	position:absolute;
+	width:514px;
+	height:156px;
+	left:24px;
+	top:14px;
+	z-index:4;
+	background-image: url("../img/conclusao_pedro_texto.png");
+	background-repeat: repeat;
+	background-size:cover;
+	background-position: center center;
+}
+/* Conclusão Barbará */
+#conclusao_barbara_area{
+	position:absolute;
+	width:1025px;
+	height:661px;
+	left:0px;
+	top:0px;
+	z-index:401;
+	display:none;
+}
+#conclusao_barbara_fundo{
+	position:absolute;
+	width:1025px;
+	height:661px;
+	left:-1px;
+	top:-1px;
+	z-index:1;
+	background-image: url("../img/conclusao_barbara_fundo.jpg");
+	background-repeat: repeat;
+	background-size:cover;
+	background-position: center center;
+}
+#conclusao_barbara_solo{
+	position:absolute;
+	width:1025px;
+	height:177px;
+	left:-1px;
+	bottom:-1px;
+	z-index:2;
+	background-image: url("../img/conclusao_barbara_solo.png");
+	background-repeat: repeat;
+	background-size:cover;
+	background-position: center center;
+}
+#conclusao_barbara_personagens{
+	position:absolute;
+	width:1025px;
+	height:661px;
+	left:-1px;
+	top:-1px;
+	z-index:3;
+	background-image: url("../img/conclusao_barbara_personagens.png");
+	background-repeat: repeat;
+	background-size:cover;
+	background-position: center center;
+}
+#conclusao_barbara_texto{
+	position:absolute;
+	width:537px;
+	height:162px;
+	left:32px;
+	top:18px;
+	z-index:4;
+	background-image: url("../img/conclusao_texto.png");
+	background-repeat: repeat;
+	background-size:cover;
+	background-position: center center;
+}
+/* Tela de devolutivas */
+#devolutiva_area{
+	position:absolute;
+	width:1025px;
+	height:661px;
+	left:-1px;
+	top:-1px;
+	z-index:500;
+	display:none;
+}
+#devolutiva_fundo{
+	position:absolute;
+	width:1025px;
+	height:661px;
+	left:-1px;
+	top:-1px;
+	z-index:1;
+	background-color: rgba(0, 0, 0, 0.6);
+	background: rgba(0, 0, 0, 0.6);
+	/**/
+	-webkit-filter:blur(10px);
+	filter:blur(10px)
+}
+#devolutiva_painel{
+	position:absolute;
+	width:581px;
+	height:297px;
+	left:221px;
+	top:111px;
+	z-index:3;
+	background-image: url("../img/devolutiva_painel.png");
+	background-repeat: repeat;
+	background-size:cover;
+	background-position: center center;
+	font-family:'HighlanderStd-Medium', sans-serif;
+	font-size:30px;
+	text-align:center;
+	color:#ffffff;
+	font-weight:normal;
+	line-height:65px;
+	text-shadow:2px 2px 4px #000000;
+}
+#devolutiva_textos{
+	position:absolute;
+	width:450px;
+	left:67px;
+	top:81px;
+    font-family:'CronosPro-Regular', sans-serif;
+	font-size:28px;
+	text-align:center;
+	color:#000000;
+	font-weight:normal;
+	line-height:120%;
+	text-shadow:none;
+}
+
+#devolutiva_btn{
+	position:absolute;
+	width:293px;
+	height:171px;
+	right:366px;
+	top:309px;
+	z-index:2;
+	background-image: url("../img/devolutiva_btn.png");
+	background-repeat: repeat;
+	background-size:cover;
+	background-position: center center;
+    font-family:'HighlanderStd-Medium', sans-serif;
+    font-size:26px;
+	text-shadow:2px 2px 5px #000000;
+    text-align:center;
+	text-indent:0px;
+    color:#ffffff;
+    font-weight:normal;
+    line-height:240px;
+	cursor:pointer;
+	display:none;
+}
+#devolutva_texto_larissa, #devolutva_texto_pedro, #devolutva_texto_barbara{
+	display:none;
+}
+
+
+/* Tela de encerramento */
+#encerramento_area{
+	position:absolute;
+	width:1025px;
+	height:661px;
+	left:0px;
+	top:0px;
+	z-index:600;
+	display:none;
+}
+#encerramento_fundo{
+	position:absolute;
+	width:1025px;
+	height:661px;
+	left:-1px;
+	top:-1px;
+	z-index:1;
+	background-image: url("../img/encerramento_fundo.jpg");
+	background-repeat: repeat;
+	background-size:cover;
+	background-position: center center;
+}
+#encerramento_personagem_adulto_1{
+	position:absolute;
+	width:387px;
+	height:585px;
+	left:363px;
+	top:25px;
+	z-index:2;
+	background-image: url("../img/encerramento_personagem_adulto_1.png");
+	background-repeat: repeat;
+	background-size:cover;
+	background-position: center center;
+}
+#encerramento_personagem_adulto_2{
+	position:absolute;
+	width:392px;
+	height:588px;
+	left:384px ;
+	top:21px;
+	z-index:2;
+	background-image: url("../img/encerramento_personagem_adulto_2.png");
+	background-repeat: repeat;
+	background-size:cover;
+	background-position: center center;
+	display:none;
+}
+#encerramento_personagem_adulto_2_boca{
+	position:absolute;
+	width:392px;
+	height:588px;
+	left:0px ;
+	top:0px;
+	z-index:2;
+	background-image: url("../img/encerramento_personagem_adulto_2_boca.png");
+	background-repeat: repeat;
+	background-size:cover;
+	background-position: center center;
+}
+#encerramento_personagem_pedro{
+	position:absolute;
+	width:187px;
+	height:475px;
+	left:34px;
+	top:181px;
+	z-index:6;
+	background-image: url("../img/encerramento_personagem_pedro.png");
+	background-repeat: repeat;
+	background-size:cover;
+	background-position: center center;
+	display:none;
+}
+#encerramento_personagem_barbara{
+	position:absolute;
+	width:211px;
+	height:454px;
+	left:208px;
+	top:189px;
+	z-index:6;
+	background-image: url("../img/encerramento_personagem_barbara.png");
+	background-repeat: repeat;
+	background-size:cover;
+	background-position: center center;
+	display:none;
+}
+#encerramento_personagem_larissa{
+	position:absolute;
+	width:231px;
+	height:449px;
+	left:758px;
+	top:195px;
+	z-index:6;
+	background-image: url("../img/encerramento_personagem_larissa.png");
+	background-repeat: repeat;
+	background-size:cover;
+	background-position: center center;
+	display:none;
+}
+
+#encerramento_balao_pedro{
+	position:absolute;
+	width:199px;
+	height:115px;
+	left:143px;
+	top:98px;
+	z-index:8;
+	background-image: url("../img/encerramento_balao_pedro.png");
+	background-repeat: repeat;
+	background-size:cover;
+	background-position: center center;
+	display:none;
+}
+#encerramento_balao_barbara{
+	position:absolute;
+	width:218px;
+	height:112px;
+	left:373px;
+	top:190px;
+	z-index:8;
+	background-image: url("../img/encerramento_balao_barbara.png");
+	background-repeat: repeat;
+	background-size:cover;
+	background-position: center center;
+	display:none;
+}
+#encerramento_balao_larissa{
+	position:absolute;
+	width:218px;
+	height:112px;
+	left:588px;
+	top:321px;
+	z-index:8;
+	background-image: url("../img/encerramento_balao_larissa.png");
+	background-repeat: repeat;
+	background-size:cover;
+	background-position: center center;
+	display:none;
+}
+#encerramento_balao_adulto{
+	position:absolute;
+	width:480px;
+	height:207px;
+	left:128px;
+	top:0px;
+	z-index:8;
+	background-image: url("../img/encerramento_balao_adulto.png");
+	background-repeat: repeat;
+	background-size:cover;
+	background-position: center center;
+	display:none;
+}
+#encerramento_texto_pedro, #encerramento_texto_barbara, #encerramento_texto_larissa, #encerramento_texto_adulto{
+	position:absolute;
+    width:140px;
+    left:37px;
+    top:24px;
+    font-family:'CronosPro-Regular', sans-serif;
+    font-size:23px;
+    text-align:center;
+    color:#000000;
+    font-weight:normal;
+    line-height:120%;
+}
+#encerramento_texto_pedro{
+    left:37px;
+    top:24px;
+}
+#encerramento_texto_barbara{
+    left:57px;
+    top:28px;
+}
+#encerramento_texto_larissa{
+    left:19px;
+    top:26px;
+}
+#encerramento_texto_adulto{
+    left:45px;
+    top:35px;
+	width:340px;
+	font-size:24px;
+}
+.nada{}
