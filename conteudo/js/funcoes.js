@@ -20,6 +20,14 @@ var audio_conclusao_larissa = new Howl({urls: ['media/audio/audio_conclusao.mp3'
 var audio_conclusao_pedro = new Howl({urls: ['media/audio/audio_conclusao.mp3'],volume: 1, sprite:{audio_conclusao_pedro_corte1: [4000, 8000]}, onend: function() { concluir_fase_pedro();}});
 
 var audio_conclusao_barbara = new Howl({urls: ['media/audio/audio_conclusao.mp3'],volume: 1, sprite:{audio_conclusao_barbara_corte1: [4000, 8000]}, onend: function() { concluir_fase_barbara();}});
+/* Narrações */
+var narra_audio_desafio_larissa = new Howl({urls: ['media/audio/audio_desafio_larissa.mp3'],volume: 1, sprite:{narra_audio_desafio_larissa_corte1: [4000, 13000]}, onend: function() { ir_etapa_tutorial();}});
+
+var narra_audio_desafio_pedro = new Howl({urls: ['media/audio/audio_desafio_pedro.mp3'],volume: 1, sprite:{narra_audio_desafio_pedro_corte1: [4000, 14000]}});
+
+var narra_audio_desafio_barbara = new Howl({urls: ['media/audio/audio_desafio_barbara.mp3'],volume: 1, sprite:{narra_audio_desafio_barbara_corte1: [4000, 23000]}});
+
+var narra_audio_encerramento_adulto = new Howl({urls: ['media/audio/audio_encerramento_adulto.mp3'],volume: 1, sprite:{narra_audio_encerramento_adulto_corte1: [2000, 15000]}, onend: function() { fim_oed_reiniciar();}});
 
 
 
@@ -96,6 +104,18 @@ var startGame = {
 		sorteio_fracoes_larissa();
 		sorteio_fracoes_barbara();
 		sorteio_fracoes_pedro();
+		//
+		if( /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent) ) {
+			document.querySelector("#inicial_personagem_larissa_dedo_e").className="nada";
+			document.querySelector("#inicial_personagem_larissa_dedo_d").className="nada";
+			document.querySelector("#inicial_personagem_pedro_dedo_e").className="nada";
+			document.querySelector("#inicial_personagem_pedro_dedo_d").className="nada";
+			document.querySelector("#inicial_personagem_barbara_dedo_d").className="nada";
+			document.querySelector("#inicial_personagem_barbara_dedo_e").className="nada";
+			document.querySelector("#inicial_area").className="animacao_atraso_0t8 vanishIn";
+
+		
+		}
 	
 	}
 };
@@ -297,27 +317,31 @@ function ir_etapa_tutorial(){
 
 function sincronizar_audio_desafio_larissa(){
 	document.querySelector("#desafio_area").style.display="inherit";
-	document.querySelector("#audio_desafio_larissa").currentTime="4";
+	//document.querySelector("#audio_desafio_larissa").currentTime="4";
 	//
-	document.querySelector("#audio_desafio_larissa").play();
-	sincronizar_audio_desafio_larissa_cnd = setInterval(function(){
+	//document.querySelector("#audio_desafio_larissa").play();
+	//narra_audio_desafio_larissa.pos(4);
+	narra_audio_desafio_larissa.play("narra_audio_desafio_larissa_corte1");
+	//
+	//sincronizar_audio_desafio_larissa_cnd = setInterval(function(){
+		console.log(Math.round(narra_audio_desafio_larissa.pos()));
 		//
 		document.querySelector("#desafio_balao_fala_1").style.display="inherit";
 		document.querySelector("#desafio_fala_1_texto_larissa").style.display="inherit";
 		document.querySelector("#desafio_balao_fala_1").className="animacao_atraso_0 fadeInUp";		
 		//
-		if(Math.round(document.querySelector("#audio_desafio_larissa").currentTime)>=5){
+	setTimeout(function(){ 
 			document.querySelector("#desafio_personagem_adulto_boca").style.display="inherit";
 			document.querySelector("#desafio_personagem_adulto_boca").className="animacao_fala_desafio_larissa_1";
-		}		
 		
-		//
-		if(Math.round(document.querySelector("#audio_desafio_larissa").currentTime)>=6){
+	}, 1000);
+	setTimeout(function(){ 
 			document.querySelector("#desafio_personagem_larissa").style.display="inherit";
 			document.querySelector("#desafio_personagem_larissa").className="animacao_atraso_0 slideInUp";
-		}
-		//
-		if(Math.round(document.querySelector("#audio_desafio_larissa").currentTime)>=10){
+		
+	}, 2000);		
+		
+	setTimeout(function(){ 
 			document.querySelector("#desafio_larissa_item_1").style.display="inherit";
 			document.querySelector("#desafio_larissa_item_2").style.display="inherit";
 			//
@@ -326,61 +350,59 @@ function sincronizar_audio_desafio_larissa(){
 			//
 			document.querySelector("#desafio_painel_lista").style.display="inherit";
 			document.querySelector("#desafio_painel_lista").className="animacao_atraso_0 bounceInUp";
-		}
-		//
-		if(Math.round(document.querySelector("#audio_desafio_larissa").currentTime)>=12){
+		
+	}, 6000);
+	setTimeout(function(){ 
 			document.querySelector("#desafio_balao_fala_1").className="animacao_atraso_0 fadeOutUp";	
 			document.querySelector("#desafio_balao_fala_2").style.display="inherit";	
 			document.querySelector("#desafio_fala_2_texto_larissa").style.display="inherit";	
 			document.querySelector("#desafio_balao_fala_2").className="animacao_atraso_0 fadeInUp";
 			//
 			document.querySelector("#desafio_personagem_adulto_boca").className="animacao_fala_desafio_larissa_2";
-		}
-		//
-		if(Math.round(document.querySelector("#audio_desafio_larissa").currentTime)>=13){
+	}, 8000);		
+	setTimeout(function(){ 
 			document.querySelector("#desafio_painel_lista").className="animacao_atraso_0 bounceOutRight";
 			//
 			document.querySelector("#desafio_caixa_creche").style.left="385px";
 			document.querySelector("#desafio_caixa_creche").style.top="304px";
 			document.querySelector("#desafio_caixa_creche").style.display="inherit";
 			//
-			document.querySelector("#desafio_caixa_creche").className="animacao_atraso_0 wobble";			
-		}
-		if(Math.round(document.querySelector("#audio_desafio_larissa").currentTime)>=15){
+			document.querySelector("#desafio_caixa_creche").className="animacao_atraso_0 wobble";	
+	}, 9000);	
+	setTimeout(function(){ 
 			document.querySelector("#desafio_caixa_orfanato").style.left="672px";
 			document.querySelector("#desafio_caixa_orfanato").style.top="445px";
 			document.querySelector("#desafio_caixa_orfanato").style.display="inherit";
 			//
 			document.querySelector("#desafio_caixa_orfanato").className="animacao_atraso_0 wobble";
-		}
-	}, 1000);
+	}, 11000);		
+
+	//}, 1000);
 }
 
 
 function sincronizar_audio_desafio_pedro(){
 	document.querySelector("#desafio_area").style.display="inherit";	
 	document.querySelector("#desafio_painel_lista").style.display="none";
-	document.querySelector("#audio_desafio_pedro").currentTime="4";
-	//
-	document.querySelector("#audio_desafio_pedro").play();
-	sincronizar_audio_desafio_pedro_cnd = setInterval(function(){
+	narra_audio_desafio_pedro.play("narra_audio_desafio_pedro_corte1");
+	//sincronizar_audio_desafio_pedro_cnd = setInterval(function(){
 		//
 		document.querySelector("#desafio_balao_fala_1").style.display="inherit";
 		document.querySelector("#desafio_fala_1_texto_pedro").style.display="inherit";
 		document.querySelector("#desafio_balao_fala_1").className="animacao_atraso_0 fadeInUp";		
 		//
-		if(Math.round(document.querySelector("#audio_desafio_pedro").currentTime)>=5){
+		setTimeout(function(){ 
 			document.querySelector("#desafio_personagem_adulto_boca").style.display="inherit";
 			document.querySelector("#desafio_personagem_adulto_boca").className="animacao_fala_desafio_pedro_1";
-		}		
+		}, 1000);			
 		
 		//
-		if(Math.round(document.querySelector("#audio_desafio_pedro").currentTime)>=6){
+		setTimeout(function(){ 
 			document.querySelector("#desafio_personagem_pedro").style.display="inherit";
 			document.querySelector("#desafio_personagem_pedro").className="animacao_atraso_0 slideInUp";
-		}
+		}, 2000);	
 		//
-		if(Math.round(document.querySelector("#audio_desafio_pedro").currentTime)>=8){
+		setTimeout(function(){ 
 			document.querySelector("#desafio_pedro_item_1").style.display="inherit";
 			document.querySelector("#desafio_pedro_item_2").style.display="inherit";
 			//
@@ -389,14 +411,14 @@ function sincronizar_audio_desafio_pedro(){
 			//
 			document.querySelector("#desafio_painel_lista").style.display="inherit";
 			document.querySelector("#desafio_painel_lista").className="animacao_atraso_0 bounceInUp";
-		}
+		}, 4000);
 		//
-		if(Math.round(document.querySelector("#audio_desafio_pedro").currentTime)>=9){
+		setTimeout(function(){ 
 			setTimeout(function(){  
 				document.querySelector("#desafio_personagem_adulto_boca").style.display="none";	
 			}, 700);
-		}		
-		if(Math.round(document.querySelector("#audio_desafio_pedro").currentTime)>=10){
+		}, 5000);		
+		setTimeout(function(){ 
 			document.querySelector("#desafio_balao_fala_1").className="animacao_atraso_0 fadeOutUp";	
 			document.querySelector("#desafio_balao_fala_2").style.display="inherit";	
 			document.querySelector("#desafio_fala_2_texto_pedro").style.display="inherit";	
@@ -404,9 +426,9 @@ function sincronizar_audio_desafio_pedro(){
 			//
 			document.querySelector("#desafio_personagem_adulto_boca").style.display="inherit";	
 			document.querySelector("#desafio_personagem_adulto_boca").className="animacao_fala_desafio_pedro_2";
-		}
+		}, 6000);	
 		//
-		if(Math.round(document.querySelector("#audio_desafio_pedro").currentTime)>=13){
+		setTimeout(function(){ 
 			document.querySelector("#desafio_painel_lista").className="animacao_atraso_0 bounceOutRight";
 			//
 			document.querySelector("#desafio_caixa_creche").style.left="385px";
@@ -414,15 +436,15 @@ function sincronizar_audio_desafio_pedro(){
 			document.querySelector("#desafio_caixa_creche").style.display="inherit";
 			//
 			document.querySelector("#desafio_caixa_creche").className="animacao_atraso_0 wobble";			
-		}
-		if(Math.round(document.querySelector("#audio_desafio_pedro").currentTime)>=14){
+		}, 9000);
+		setTimeout(function(){ 
 			document.querySelector("#desafio_caixa_orfanato").style.left="702px";
 			document.querySelector("#desafio_caixa_orfanato").style.top="275px";
 			document.querySelector("#desafio_caixa_orfanato").style.display="inherit";
 			//
 			document.querySelector("#desafio_caixa_orfanato").className="animacao_atraso_0 wobble";
-		}
-		if(Math.round(document.querySelector("#audio_desafio_pedro").currentTime)==15){
+		}, 10000);
+		setTimeout(function(){ 
 			document.querySelector("#desafio_caixa_asilo").style.left="647px";
 			document.querySelector("#desafio_caixa_asilo").style.top="448px";
 			document.querySelector("#desafio_caixa_asilo").style.display="inherit";
@@ -502,35 +524,33 @@ function sincronizar_audio_desafio_pedro(){
 			
 		}, 4000);			
 			
-		}		
-	}, 1000);
+		}, 11000);		
+	//}, 1000);
 }
 
 function sincronizar_audio_desafio_barbara(){
 	document.querySelector("#desafio_area").style.display="inherit";	
 	document.querySelector("#desafio_painel_lista").style.display="none";	
 	//
-	document.querySelector("#audio_desafio_barbara").currentTime="4";
-	//
-	document.querySelector("#audio_desafio_barbara").play();
-	sincronizar_audio_desafio_barbara_cnd = setInterval(function(){
+	narra_audio_desafio_barbara.play("narra_audio_desafio_barbara_corte1");
+	//sincronizar_audio_desafio_barbara_cnd = setInterval(function(){
 		//
 		document.querySelector("#desafio_balao_fala_1").style.display="inherit";
 		document.querySelector("#desafio_fala_1_texto_barbara").style.display="inherit";
 		document.querySelector("#desafio_balao_fala_1").className="animacao_atraso_0 fadeInUp";		
 		//
-		if(Math.round(document.querySelector("#audio_desafio_barbara").currentTime)>=5){
+		setTimeout(function(){ 
 			document.querySelector("#desafio_personagem_adulto_boca").style.display="inherit";
 			document.querySelector("#desafio_personagem_adulto_boca").className="animacao_fala_desafio_barbara_1";
-		}		
+		}, 1000);		
 		
 		//
-		if(Math.round(document.querySelector("#audio_desafio_barbara").currentTime)>=7){
+		setTimeout(function(){ 
 			document.querySelector("#desafio_personagem_barbara").style.display="inherit";
 			document.querySelector("#desafio_personagem_barbara").className="animacao_atraso_0 slideInUp";
-		}
+		}, 3000);
 		//
-		if(Math.round(document.querySelector("#audio_desafio_barbara").currentTime)>=10){
+		setTimeout(function(){ 
 			document.querySelector("#desafio_barbara_item_1").style.display="inherit";
 			document.querySelector("#desafio_barbara_item_2").style.display="inherit";
 			//
@@ -539,9 +559,9 @@ function sincronizar_audio_desafio_barbara(){
 			//
 			document.querySelector("#desafio_painel_lista").style.display="inherit";
 			document.querySelector("#desafio_painel_lista").className="animacao_atraso_0 bounceInUp";
-		}
+		}, 6000);
 		//
-		if(Math.round(document.querySelector("#audio_desafio_barbara").currentTime)>=12){
+		setTimeout(function(){ 
 			document.querySelector("#desafio_balao_fala_1").className="animacao_atraso_0 fadeOutUp";	
 			document.querySelector("#desafio_balao_fala_2").style.display="inherit";	
 			document.querySelector("#desafio_fala_2_texto_barbara").style.display="inherit";	
@@ -549,9 +569,9 @@ function sincronizar_audio_desafio_barbara(){
 			//
 			//document.querySelector("#desafio_personagem_adulto_boca").style.display="inherit";	
 			document.querySelector("#desafio_personagem_adulto_boca").className="animacao_fala_desafio_barbara_2";
-		}
+		}, 8000);
 		//
-		if(Math.round(document.querySelector("#audio_desafio_barbara").currentTime)>=14){
+		setTimeout(function(){ 
 			document.querySelector("#desafio_painel_lista").className="animacao_atraso_0 bounceOutRight";
 			//
 			document.querySelector("#desafio_caixa_creche").style.left="390px";
@@ -559,40 +579,40 @@ function sincronizar_audio_desafio_barbara(){
 			document.querySelector("#desafio_caixa_creche").style.display="inherit";
 			//
 			document.querySelector("#desafio_caixa_creche").className="animacao_atraso_0 wobble";			
-		}
-		if(Math.round(document.querySelector("#audio_desafio_barbara").currentTime)>=15){
+		}, 10000);
+		setTimeout(function(){ 
 			document.querySelector("#desafio_caixa_orfanato").style.left="686px";
 			document.querySelector("#desafio_caixa_orfanato").style.top="284px";
 			document.querySelector("#desafio_caixa_orfanato").style.display="inherit";
 			//
 			document.querySelector("#desafio_caixa_orfanato").className="animacao_atraso_0 wobble";
-		}
-		if(Math.round(document.querySelector("#audio_desafio_barbara").currentTime)==17){
+		}, 11000);
+		setTimeout(function(){ 
 			document.querySelector("#desafio_caixa_asilo").style.left="427px";
 			document.querySelector("#desafio_caixa_asilo").style.top="451px";
 			document.querySelector("#desafio_caixa_asilo").style.display="inherit";
 			//
 			document.querySelector("#desafio_caixa_asilo").className="animacao_atraso_0 wobble";
 			//
-		}
+		}, 13000);
 		//
-		if(Math.round(document.querySelector("#audio_desafio_barbara").currentTime)==18){
+		setTimeout(function(){ 
 			document.querySelector("#desafio_caixa_cidade").style.left="708px";
 			document.querySelector("#desafio_caixa_cidade").style.top="470px";
 			document.querySelector("#desafio_caixa_cidade").style.display="inherit";
 			//
 			document.querySelector("#desafio_caixa_cidade").className="animacao_atraso_0 wobble";
 			//
-		}
+		}, 14000);
 		//
-		if(Math.round(document.querySelector("#audio_desafio_barbara").currentTime)==19){
+		setTimeout(function(){ 
 			document.querySelector("#desafio_balao_fala_2").className="animacao_atraso_0 fadeOutUp";	
 			document.querySelector("#desafio_balao_fala_3").style.display="inherit";	
 			document.querySelector("#desafio_fala_3_texto_barbara").style.display="inherit";	
 			document.querySelector("#desafio_balao_fala_3").className="animacao_atraso_0 fadeInUp";			
 
-		}	
-		if(Math.round(document.querySelector("#audio_desafio_barbara").currentTime)==20){
+		}, 15000);	
+		setTimeout(function(){ 
 			clearInterval(sincronizar_audio_desafio_barbara_cnd);
 			//
 			document.querySelector("#desafio_balao_fala_2").style.display="none";
@@ -667,11 +687,11 @@ function sincronizar_audio_desafio_barbara(){
 				document.querySelector("#desafio_area").style.display="none";	
 			}, 5000);			
 
-		}
+		}, 16000);
 	
 
 		
-	}, 1000);
+	//}, 1000);
 }
 
 /* Funções para gerar as funções aleatórias em cada fase */
@@ -1331,7 +1351,12 @@ $("#jogo_larissa_painel_btn_fechar").click(function() {
 				document.querySelector("#jogo_larissa_objeto_8").style.height="89px";
 				document.querySelector("#jogo_larissa_objeto_8").style.backgroundImage= "url('./img/desafio_larissa_item_2.png')";
 			}, 1000);
-				
+			//
+			if( /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent) ) {
+				document.querySelector("#jogo_larissa_objeto_8").style.width="0px";
+				document.querySelector("#jogo_larissa_objeto_8").style.height="0px";
+				document.querySelector("#jogo_larissa_objeto_8").style.visibility="hidden";
+			}
 			}
 			//
 			if(item_atual=="jogo_larissa_objeto_9"){
@@ -1486,7 +1511,11 @@ $("#jogo_larissa_painel_btn_fechar").click(function() {
 				document.querySelector("#jogo_larissa_objeto_8").style.height="89px";
 				document.querySelector("#jogo_larissa_objeto_8").style.backgroundImage= "url('./img/desafio_larissa_item_2.png')";
 			}, 1000);
-				
+			if( /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent) ) {
+				document.querySelector("#jogo_larissa_objeto_8").style.width="0px";
+				document.querySelector("#jogo_larissa_objeto_8").style.height="0px";
+				document.querySelector("#jogo_larissa_objeto_8").style.visibility="hidden";
+			}				
 			}
 			//
 			if(item_atual=="jogo_larissa_objeto_9"){
@@ -2353,6 +2382,7 @@ $("#devolutiva_btn").click(function() {
 	document.querySelector("#jogo_larissa_objeto_8").style.left="600px";
 	document.querySelector("#jogo_larissa_objeto_8").style.width="89px";
 	document.querySelector("#jogo_larissa_objeto_8").style.height="33px";
+	document.querySelector("#jogo_larissa_objeto_8").style.visibility="visible";
 	document.querySelector("#jogo_larissa_objeto_8").style.backgroundImage= "url('./img/jogo_larissa_objeto_8.png')";
 	//
 	document.querySelector("#jogo_larissa_objeto_9").style.top="393px";
@@ -2542,7 +2572,10 @@ $("#devolutiva_btn").click(function() {
 	$("#jogo_barbara_objeto_10").draggable({containment: "parent", disabled: false });	
 	$("#jogo_barbara_objeto_11").draggable({containment: "parent", disabled: false });	
 	$("#jogo_barbara_objeto_12").draggable({containment: "parent", disabled: true });	
-	$("#jogo_barbara_objeto_13").draggable({containment: "parent", disabled: true });	
+	$("#jogo_barbara_objeto_13").draggable({containment: "parent", disabled: true });
+if(/Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent)){
+$("#jogo_barbara_objeto_13").draggable({containment: "parent", disabled: false });
+}	
 	$("#jogo_barbara_objeto_14").draggable({containment: "parent", disabled: true });	
 	$("#jogo_barbara_objeto_15").draggable({containment: "parent", disabled: false });	
 	//
@@ -3077,6 +3110,27 @@ $("#jogo_barbara_painel_btn_fechar").click(function() {
 			setTimeout(function(){ document.querySelector("#jogo_barbara_objeto_13").className="nada"; }, 1000);
 		}
 	});
+	$( "#jogo_barbara_objeto_13" ).click(function() {
+		if(/Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent)){
+			if(latas_soltas[0]=="n" && latas_soltas[1]=="n"){
+				//alert(latas_soltas);
+				$("#jogo_barbara_objeto_13").draggable({containment: "parent", disabled: false });
+				document.querySelector("#jogo_barbara_objeto_13").className="animacao_atraso_0 tada";
+				item_atual="jogo_barbara_objeto_13";
+				document.querySelector("#jogo_barbara_objeto_13").style.zIndex="20";
+				setTimeout(function(){ document.querySelector("#jogo_barbara_objeto_13").className="nada"; }, 1000);
+			}
+		}
+	});	
+	/*$( "#jogo_barbara_objeto_13" ).tap(function() {
+		if(latas_soltas[0]=="n" && latas_soltas[1]=="n"){
+			$("#jogo_barbara_objeto_13").draggable({containment: "parent", disabled: false });
+			document.querySelector("#jogo_barbara_objeto_13").className="animacao_atraso_0 tada";
+			item_atual="jogo_barbara_objeto_13";
+			document.querySelector("#jogo_barbara_objeto_13").style.zIndex="20";
+			setTimeout(function(){ document.querySelector("#jogo_barbara_objeto_13").className="nada"; }, 1000);
+		}
+	});	*/
 	$( "#jogo_barbara_objeto_13" ).draggable({containment: "parent", revert: false, scrollSpeed: 1, zIndex: 500, scrollSensitivity: 100});
 	$( "#jogo_barbara_objeto_13" ).mouseleave(function() {document.querySelector("#jogo_barbara_objeto_13").style.zIndex="10";
 		setTimeout(function(){
@@ -3094,7 +3148,10 @@ $("#jogo_barbara_painel_btn_fechar").click(function() {
 			}
 		}, 5);		
 	});	
-	$("#jogo_barbara_objeto_13").draggable({containment: "parent", disabled: true });	
+	$("#jogo_barbara_objeto_13").draggable({containment: "parent", disabled: true });
+if(/Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent)){
+$("#jogo_barbara_objeto_13").draggable({containment: "parent", disabled: false });
+}	
 	//
 	$( "#jogo_barbara_objeto_14" ).mousedown(function() {
 		if(latas_soltas[1]=="n"){
@@ -3378,6 +3435,9 @@ $("#jogo_barbara_painel_btn_fechar").click(function() {
 			if(item_atual=="jogo_barbara_objeto_13"){
 				$( "#jogo_barbara_objeto_13" ).draggable({containment: "parent", revert: false });
 				$("#jogo_barbara_objeto_13").draggable({containment: "parent", disabled: true });
+				if(/Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent)){
+$("#jogo_barbara_objeto_13").draggable({containment: "parent", disabled: false });
+}
 				respostas_jogo_barbara[0]++;
 				voltas_jogo_barbara[12]=1;
 				document.querySelector("#jogo_barbara_objeto_13").style.top="536px";
@@ -3644,6 +3704,9 @@ $("#jogo_barbara_painel_btn_fechar").click(function() {
 			if(item_atual=="jogo_barbara_objeto_13"){
 				$( "#jogo_barbara_objeto_13" ).draggable({containment: "parent", revert: false });
 				$("#jogo_barbara_objeto_13").draggable({containment: "parent", disabled: true });
+				if(/Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent)){
+$("#jogo_barbara_objeto_13").draggable({containment: "parent", disabled: false });
+}
 				respostas_jogo_barbara[1]++;
 				voltas_jogo_barbara[12]=1; document.querySelector("#jogo_barbara_objeto_13").style.top="536px";
 				//
@@ -3907,6 +3970,9 @@ $("#jogo_barbara_painel_btn_fechar").click(function() {
 			if(item_atual=="jogo_barbara_objeto_13"){
 				$( "#jogo_barbara_objeto_13" ).draggable({containment: "parent", revert: false });
 				$("#jogo_barbara_objeto_13").draggable({containment: "parent", disabled: true });
+				if(/Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent)){
+$("#jogo_barbara_objeto_13").draggable({containment: "parent", disabled: false });
+}
 				respostas_jogo_barbara[2]++;
 				voltas_jogo_barbara[12]=1; document.querySelector("#jogo_barbara_objeto_13").style.top="536px";
 				//
@@ -4170,6 +4236,9 @@ $("#jogo_barbara_painel_btn_fechar").click(function() {
 			if(item_atual=="jogo_barbara_objeto_13"){
 				$( "#jogo_barbara_objeto_13" ).draggable({containment: "parent", revert: false });
 				$("#jogo_barbara_objeto_13").draggable({containment: "parent", disabled: true });
+				if(/Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent)){
+$("#jogo_barbara_objeto_13").draggable({containment: "parent", disabled: false });
+}
 				respostas_jogo_barbara[3]++;
 				voltas_jogo_barbara[12]=1; document.querySelector("#jogo_barbara_objeto_13").style.top="536px";
 				//
@@ -4349,8 +4418,7 @@ function ir_tela_encerramento(){
 	//document.querySelector("#encerramento_personagem_adulto_1").className="animacao_atraso_0 fadeIn";
 	//
 	audio_trilha_sonora.stop();
-	document.querySelector("#audio_encerramento_adulto").currentTime=2;
-	document.querySelector("#audio_encerramento_adulto").play();
+	narra_audio_encerramento_adulto.play("narra_audio_encerramento_adulto_corte1")
 	//
 	setTimeout(function(){
 		//document.querySelector("#encerramento_area").style.top="0px";
@@ -4359,9 +4427,9 @@ function ir_tela_encerramento(){
 		document.querySelector("#encerramento_personagem_adulto_1").className="nada";
 	}, 1000);	
 	//
-	sincronizar_audio_encerramento_cnd = setInterval(function(){
+	//sincronizar_audio_encerramento_cnd = setInterval(function(){
 		//
-		if(Math.round(document.querySelector("#audio_encerramento_adulto").currentTime)>=4){
+		setTimeout(function(){ 
 			$("#encerramento_personagem_larissa, #encerramento_personagem_pedro, #encerramento_personagem_barbara, #encerramento_balao_pedro, #encerramento_balao_larissa, #encerramento_balao_barbara").css( "display", "inherit" );
 			//
 			document.querySelector("#encerramento_personagem_larissa").className="animacao_atraso_0t4 bounce";
@@ -4370,9 +4438,9 @@ function ir_tela_encerramento(){
 			document.querySelector("#encerramento_balao_pedro").className="animacao_atraso_0t4 bounce";
 			document.querySelector("#encerramento_balao_larissa").className="animacao_atraso_0t4 bounce";
 			document.querySelector("#encerramento_balao_barbara").className="animacao_atraso_0t4 bounce";
-		}
+		}, 2000);	
 		//
-		if(Math.round(document.querySelector("#audio_encerramento_adulto").currentTime)>=8){
+		setTimeout(function(){ 
 			$("#encerramento_personagem_larissa, #encerramento_personagem_pedro, #encerramento_personagem_barbara, #encerramento_balao_pedro, #encerramento_balao_larissa, #encerramento_balao_barbara").css( "display", "inherit" );
 			//
 			document.querySelector("#encerramento_balao_pedro").className="animacao_atraso_0t500ms fadeOutDown";
@@ -4387,9 +4455,9 @@ function ir_tela_encerramento(){
 			document.querySelector("#encerramento_personagem_adulto_2_boca").className="animacao_fala_encerramento";
 			
 			
-		}		
+		}, 6000);			
 				
-	}, 1000);	
+	//}, 1000);	
 }
 	
 function fim_oed_reiniciar(){
@@ -4559,6 +4627,7 @@ $("#jogo_larissa_btn_refazer, #jogo_pedro_btn_refazer, #jogo_barbara_btn_refazer
 	document.querySelector("#jogo_larissa_objeto_8").style.left="600px";
 	document.querySelector("#jogo_larissa_objeto_8").style.width="89px";
 	document.querySelector("#jogo_larissa_objeto_8").style.height="33px";
+	document.querySelector("#jogo_larissa_objeto_8").style.visibility="visible";
 	document.querySelector("#jogo_larissa_objeto_8").style.backgroundImage= "url('./img/jogo_larissa_objeto_8.png')";
 	//
 	document.querySelector("#jogo_larissa_objeto_9").style.top="393px";
@@ -4748,7 +4817,10 @@ $("#jogo_larissa_btn_refazer, #jogo_pedro_btn_refazer, #jogo_barbara_btn_refazer
 	$("#jogo_barbara_objeto_10").draggable({containment: "parent", disabled: false });	
 	$("#jogo_barbara_objeto_11").draggable({containment: "parent", disabled: false });	
 	$("#jogo_barbara_objeto_12").draggable({containment: "parent", disabled: true });	
-	$("#jogo_barbara_objeto_13").draggable({containment: "parent", disabled: true });	
+	$("#jogo_barbara_objeto_13").draggable({containment: "parent", disabled: true });
+if(/Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent)){
+$("#jogo_barbara_objeto_13").draggable({containment: "parent", disabled: false });
+}	
 	$("#jogo_barbara_objeto_14").draggable({containment: "parent", disabled: true });	
 	$("#jogo_barbara_objeto_15").draggable({containment: "parent", disabled: false });	
 	//
@@ -4815,6 +4887,11 @@ $("#jogo_larissa_btn_refazer, #jogo_pedro_btn_refazer, #jogo_barbara_btn_refazer
 
 
 
-
+function iniciar_com_tap(){
+	startGame.init();
+	audio_trilha_sonora.play();
+	audio_trilha_sonora.stop();
+	clearInterval(verificar_inicio_cnd);
+}
 
 

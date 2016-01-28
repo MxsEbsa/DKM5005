@@ -29,6 +29,14 @@
   -webkit-animation-delay: 0s;
   animation-delay: 0s;
 }
+.animacao_atraso_0t8{
+  -webkit-animation-duration: 8s;
+  animation-duration: 8s;
+  -webkit-animation-fill-mode: both;
+  animation-fill-mode: both;
+  -webkit-animation-delay: 0s;
+  animation-delay: 0s;
+}
 .animacao_atraso_0t500ms {
   -webkit-animation-duration: 500ms;
   animation-duration: 500ms;

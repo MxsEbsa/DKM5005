@@ -18,18 +18,7 @@
 			<audio id="audio_inicial_adulto" onended="ir_etapa_desafio_larissa()">
 				<source src="./media/audio/audio_inicial_adulto.mp3" type="audio/mpeg">
 			</audio>
-			<audio id="audio_desafio_larissa" onended="ir_etapa_tutorial()">
-				<source src="./media/audio/audio_desafio_larissa.mp3" type="audio/mpeg">
-			</audio>
-			<audio id="audio_desafio_pedro" onended="">
-				<source src="./media/audio/audio_desafio_pedro.mp3" type="audio/mpeg">
-			</audio>
-			<audio id="audio_desafio_barbara" onended="">
-				<source src="./media/audio/audio_desafio_barbara.mp3" type="audio/mpeg">
-			</audio>
-			<audio id="audio_encerramento_adulto" onended="fim_oed_reiniciar()">
-				<source src="./media/audio/audio_encerramento_adulto.mp3" type="audio/mpeg">
-			</audio>				
+		
 		</span>
 	
 	<!-- Fim das tags de áudio para falas sincronizadas -->
@@ -401,6 +390,11 @@
 
 
 	<!-- CARREGAMENTO DE SCRIPTS -->
+	<script>
+		function iniciar_oed_frame(){
+			iniciar_com_tap();
+		}	
+	</script>
 	<script type="text/javascript" src="../js/carrega_oed.js"></script>
 	<script type="text/javascript" src="js/funcoes.js"></script>	
 </body>	
